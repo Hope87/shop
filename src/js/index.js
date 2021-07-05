@@ -1,2 +1,2 @@
 import '../scss/styles.scss';
-import '../fonts /ptrootui.css';
+import '../fonts /stylesheet.css';
