@@ -1,0 +1,171 @@
+.orders {
+  background-color: #000000;
+  padding-top: 120px;
+  &__title {
+    h2 {
+      color: #fdfafa;
+      font-family: 'Roboto Slab';
+      font-size: 4.5em;
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+    }
+    p {
+      color: #fdfafa;
+      font-family: 'Open Sans';
+      font-size: 1.6em;
+      font-weight: 700;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: 26px;
+      text-align: center;
+      margin-bottom: 80px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1200px;
+    justify-content: space-between;
+
+    &-title {
+      padding: 0px 35px 0px 22px;
+      background-color: #f71a22;
+      margin-right: 60px;
+      position: relative;
+      h3 {
+        position: relative;
+        color: #fdfafa;
+        font-family: 'Roboto Slab';
+        font-size: 3.2em;
+        font-weight: bold;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        text-align: left;
+      }
+
+      h3::before {
+        content: url('../img/Polygon.png');
+        left: -70px;
+        position: absolute;
+      }
+    }
+
+    .title--1::after {
+      content: url('../img/order_1.png');
+      display: block;
+      position: absolute;
+      top: 51px;
+      left: 0;
+    }
+
+    .title--2::after {
+      content: url('../img/order_2.png');
+      display: block;
+      position: absolute;
+      top: 51px;
+      left: 0;
+    }
+
+    .title--3::after {
+      content: url('../img/order_3.png');
+      display: block;
+      position: absolute;
+      top: 51px;
+      left: 0;
+    }
+
+    .title--4 {
+      margin-right: 300px;
+    }
+
+    .title--4::after {
+      content: url('../img/order_4.png');
+      display: block;
+      position: absolute;
+      top: 51px;
+      left: 0;
+    }
+
+    .title--5 {
+      margin-right: 220px;
+    }
+
+    .title--5::after {
+      content: url('../img/order_5.png');
+      display: block;
+      position: absolute;
+      top: 51px;
+      left: 0;
+    }
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      margin-bottom: 100px;
+
+      .menu__list::after {
+        content: url('../img/Polygon_left.png');
+        display: block;
+        position: absolute;
+        top: 140px;
+        left: -70px;
+      }
+    }
+    &-menu {
+      margin-top: 15px;
+      width: 280px;
+      margin-right: -30px;
+      position: relative;
+
+      .menu__list-item {
+        display: flex;
+        justify-content: space-between;
+
+        p {
+          color: #fdfafa;
+          font-family: 'PT Root UI';
+          font-size: 1.8em;
+          font-weight: 400;
+          font-style: normal;
+          letter-spacing: normal;
+          text-align: left;
+          margin-bottom: 0;
+          line-height: 32px;
+        }
+
+        span {
+          color: #fdfafa;
+          font-family: 'PT Root UI';
+          font-size: 1.2em;
+          font-weight: 400;
+          font-style: normal;
+          letter-spacing: normal;
+          text-align: left;
+          margin-bottom: 20px;
+        }
+      }
+
+      .list__item-block {
+        display: block;
+        margin-bottom: 36px;
+
+        p {
+          line-height: normal;
+        }
+      }
+    }
+
+    .menu__list--3 {
+      margin-right: 0px;
+    }
+  }
+}
