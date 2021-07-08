@@ -79,6 +79,7 @@ module.exports = {
         },
         {
           from: path.resolve(__dirname, '../src/fonts'),
+
           to: path.resolve(__dirname, '../dist/fonts'),
           noErrorOnMissing: true,
         },

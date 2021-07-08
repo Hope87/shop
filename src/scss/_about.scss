@@ -1,4 +1,5 @@
 
+
 //Стили для блока с хрен пойми чем
 .uppercase {
   text-transform: uppercase;
@@ -100,3 +101,73 @@
   color: #535252;
 }
 //Стили для блока с хрен пойми чем вот по сюда
+
+
+.about {
+
+  background-color: #ececed;
+
+  &__box {
+    display: flex;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 30px;
+
+    img {
+      width: 22px;
+      height: 22px;
+    }
+
+    h3 {
+      color: #fa1921;
+      font-family: 'Roboto Slab';
+      font-size: 3.2em;
+      font-weight: 700;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: 48px;
+      text-align: left;
+      margin-left: 13px;
+    }
+  }
+
+  &__text {
+    font-family: 'Myriad Pro';
+    font-size: 1.7em;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 28px;
+    text-align: left;
+  }
+
+  &__box--right {
+    justify-content: flex-end;
+    margin-bottom: 50px;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    padding-left: 130px;
+    p {
+      margin-left: 30px;
+      font-family: 'Myriad Pro';
+      font-size: 1.6em;
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: 28px;
+      text-align: left;
+      margin-bottom: 0;
+    }
+  }
+
+  div:nth-of-type(3n) {
+    margin-top: 20px;
+  }
+
+  &__house {
+    margin-top: 60px;
+  }
+}
