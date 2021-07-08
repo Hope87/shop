@@ -1,11 +1,14 @@
 .pre-orders {
-  height: 1200px;
   display: flex;
+  position: relative;
+  margin-top: -300px;
 
   &__left {
     display: flex;
     flex: 0.5;
     justify-content: flex-end;
+    position: relative;
+    z-index: 2;
 
     .pre-orders__cards {
       display: flex;
@@ -81,8 +84,109 @@
 
   &__right {
     flex: 0.5;
-  }
+    background-color: black;
+    .pre-orders__contacts {
+      margin-left: 80px;
+      margin-top: 340px;
+      position: relative;
+      z-index: 2;
 
+      h2 {
+        color: #fdfafa;
+        font-family: 'Roboto Slab';
+        font-size: 4em;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        text-align: left;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+      }
+
+      &-text {
+        color: #fdfafa;
+        font-family: 'Roboto Slab';
+        font-size: 2em;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 32px;
+        text-align: left;
+        margin-bottom: 20px;
+      }
+
+      &-patronage {
+        font-family: 'Roboto Slab';
+        font-size: 2.2em;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 32px;
+        text-align: left;
+        color: #c80101;
+        margin-bottom: 0px;
+      }
+
+      &-info {
+        color: #fdfafa;
+        font-family: 'Roboto Slab';
+        font-size: 2.2em;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 32px;
+        text-align: left;
+        margin-left: 70px;
+        margin-top: 40px;
+      }
+
+      &-email::before {
+        content: url('../img/email.png');
+        filter: invert(100%);
+        position: absolute;
+        left: 0;
+      }
+
+      &-phone::before {
+        content: url('../img/whatsapp.png');
+        filter: invert(100%);
+        position: absolute;
+        left: 0;
+      }
+
+      &-btn {
+        position: absolute;
+        top: 340px;
+        left: 290px;
+        width: 180px;
+        height: 60px;
+        box-shadow: -8px 15px 54px rgba(254, 113, 41, 0.16);
+        background-color: #f71a22;
+        color: #ffffff;
+        font-family: 'Myriad Pro';
+        font-size: 2em;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 32.28px;
+        text-align: left;
+        padding-left: 20px;
+        border: none;
+      }
+
+      &-btn::after {
+        content: url('../img/right-arrow.png');
+        position: absolute;
+        right: 20px;
+      }
+    }
+
+    &-img {
+      position: absolute;
+      bottom: 0;
+    }
+  }
   &__text {
     span {
       font-family: 'PT Root UI';

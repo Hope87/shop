@@ -1,6 +1,8 @@
 .orders {
   background-color: #000000;
   padding-top: 120px;
+  position: relative;
+  z-index: 1;
   &__title {
     h2 {
       color: #fdfafa;
