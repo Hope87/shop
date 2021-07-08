@@ -48,7 +48,7 @@
     position: relative;
     z-index: 2;
     margin-top: 40px;
-    div {
+    &-box {
       max-width: 525px;
       height: 760px;
       border: 1px solid black;
@@ -57,7 +57,7 @@
       img {
         margin-left: 22px;
         margin-top: -22px;
-        width: 480px;
+        max-width: 480px;
       }
 
       h3 {
@@ -75,7 +75,7 @@
     }
   }
 
-  &__btn {
+  &-btn {
     display: flex;
     flex-direction: column;
     margin-left: 40px;
