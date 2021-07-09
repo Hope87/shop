@@ -95,13 +95,18 @@
         line-height: 45px;
         text-align: left;
       }
+
+      li::before {
+        content: url('../img/square.png');
+        margin-right: 15px;
+      }
     }
   }
 
   &__sides {
     margin-top: 60px;
 
-    &__box {
+    &-box {
       display: flex;
       align-items: center;
       margin-bottom: 50px;
@@ -131,7 +136,7 @@
       }
     }
 
-    &__list {
+    &-list {
       margin-top: 50px;
       li {
         color: #f71a22;
@@ -143,12 +148,17 @@
         line-height: 45px;
         text-align: left;
       }
+
+      li::before {
+        content: url('../img/square.png');
+        margin-right: 15px;
+      }
     }
   }
 
   &__discounts {
     margin-top: 120px;
-    &__box {
+    &-box {
       position: relative;
 
       img {
@@ -162,7 +172,7 @@
         position: absolute;
         color: #fdfafa;
         font-family: 'Roboto Slab';
-        font-size: 2.2em;
+        font-size: 2em;
         font-weight: 400;
         font-style: normal;
         letter-spacing: normal;
@@ -175,7 +185,7 @@
       }
     }
 
-    &__text {
+    &-text {
       margin-top: 50px;
       padding-left: 150px;
       p {
@@ -192,7 +202,7 @@
         }
       }
     }
-    &__text {
+    &-text {
       p:nth-child(3) {
         margin-top: 40px;
         margin-bottom: 40px;
