@@ -95,6 +95,11 @@
         line-height: 45px;
         text-align: left;
       }
+
+      li::before {
+        content: url('../img/square.png');
+        margin-right: 15px;
+      }
     }
   }
 
@@ -142,6 +147,11 @@
         letter-spacing: normal;
         line-height: 45px;
         text-align: left;
+      }
+
+      li::before {
+        content: url('../img/square.png');
+        margin-right: 15px;
       }
     }
   }
