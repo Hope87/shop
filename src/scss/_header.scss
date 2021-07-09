@@ -208,7 +208,7 @@
     margin-right: 58px;
 
     &-link {
-      font-family: "PT Root UI", sans-serif;
+      font-family: 'PT Root UI', sans-serif;
       font-size: 20px;
       line-height: 14px;
       font-weight: 400;
@@ -283,7 +283,7 @@
       width: 100%;
       min-height: 84px;
       height: 100%;
-      font-family: "Roboto Slab", sans-serif;
+      font-family: 'Roboto Slab', sans-serif;
       font-size: 36px;
       font-weight: 400;
       font-style: normal;
@@ -295,17 +295,17 @@
       &-main {
         padding-left: 67px;
         padding-bottom: 53px;
-
       }
     }
 
-    &-description {/* Style for "Lorem ipsu" */
+    &-description {
+      /* Style for "Lorem ipsu" */
       max-width: 609px;
       width: 100%;
       min-height: 78px;
       height: 100%;
       color: #000000;
-      font-family: "Myriad Pro", sans-serif;
+      font-family: 'Myriad Pro', sans-serif;
       font-size: 24px;
       font-weight: 400;
       font-style: normal;
@@ -322,7 +322,7 @@
       padding: 75px 0 0 114px;
 
       &:before {
-        background-image: url("../img/two-grilled-marbled-beef-steaks-striploin.png");
+        background-image: url('../img/two-grilled-marbled-beef-steaks-striploin.png');
         background-repeat: no-repeat;
         background-position: 205px -11px;
       }
@@ -331,7 +331,7 @@
 }
 
 .slash {
-  background-image: url("../img/Rectangle_small.png");
+  background-image: url('../img/Rectangle_small.png');
   background-repeat: no-repeat;
   background-position: 0 15%;
 }

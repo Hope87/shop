@@ -41,6 +41,7 @@
       background-color: #f71a22;
       margin-right: 60px;
       position: relative;
+
       h3 {
         position: relative;
         color: #fdfafa;
@@ -60,52 +61,25 @@
       }
     }
 
-    .title--1::after {
-      content: url('../img/order_1.png');
-      display: block;
-      position: absolute;
-      top: 51px;
-      left: 0;
-    }
-
-    .title--2::after {
-      content: url('../img/order_2.png');
-      display: block;
-      position: absolute;
-      top: 51px;
-      left: 0;
-    }
-
-    .title--3::after {
-      content: url('../img/order_3.png');
-      display: block;
-      position: absolute;
-      top: 51px;
-      left: 0;
+    .title--1,
+    .title--2,
+    .title--3,
+    .title--4,
+    .title--5 {
+      img {
+        display: block;
+        position: absolute;
+        top: 51px;
+        left: 0;
+      }
     }
 
     .title--4 {
       margin-right: 300px;
     }
 
-    .title--4::after {
-      content: url('../img/order_4.png');
-      display: block;
-      position: absolute;
-      top: 51px;
-      left: 0;
-    }
-
     .title--5 {
       margin-right: 220px;
-    }
-
-    .title--5::after {
-      content: url('../img/order_5.png');
-      display: block;
-      position: absolute;
-      top: 51px;
-      left: 0;
     }
 
     &-item {
