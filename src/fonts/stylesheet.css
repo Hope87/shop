@@ -423,3 +423,30 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'GT Eesti Pro Display';
+  src: url('GTEestiProDisplay-Bold.eot');
+  src: local('GTEestiProDisplay-Bold'), local('GTEestiProDisplay-Bold'),
+    url('GTEestiProDisplay-Bold.eot?#iefix') format('embedded-opentype'), url('GTEestiProDisplay-Bold.woff') format('woff'),
+    url('GTEestiProDisplay-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GT Eesti Pro Display';
+  src: url('GTEestiProDisplay-Medium.eot');
+  src: local('GTEestiProDisplay-Medium'), local('GTEestiProDisplay-Medium'),
+    url('GTEestiProDisplay-Medium.eot?#iefix') format('embedded-opentype'), url('GTEestiProDisplay-Medium.woff') format('woff'),
+    url('GTEestiProDisplay-Medium.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GT Eesti Pro Display';
+  src: url('GTEestiProDisplay-Thin.eot');
+  src: local('GTEestiProDisplay-Thin'), local('GTEestiProDisplay-Thin'),
+    url('GTEestiProDisplay-Thin.eot?#iefix') format('embedded-opentype'), url('GTEestiProDisplay-Thin.woff') format('woff'),
+    url('GTEestiProDisplay-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
