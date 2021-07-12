@@ -190,6 +190,12 @@
 //////////////////////////////////BBQ//////////////////////////////////////////
 .bbq {
   margin-top: 80px;
+
+  @media (max-width: 575.98px) {
+    padding: 5px;
+    margin-top: 40px;
+  }
+
   h4 {
     font-family: 'Roboto Slab';
     font-size: 2em;
@@ -199,6 +205,11 @@
     line-height: 48px;
     text-align: center;
     margin-bottom: 60px;
+
+    @media (max-width: 575.98px) {
+      font-size: 1.8em;
+      line-height: normal;
+    }
   }
 
   &__headerText {
@@ -212,22 +223,50 @@
     line-height: 28px;
     text-align: center;
     margin: 0 auto;
+
+    @media (max-width: 575.98px) {
+      width: auto;
+      height: auto;
+      font-size: 2em;
+      line-height: normal;
+      text-align: left;
+    }
   }
 
   &__cards {
     margin-top: 80px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+
+    @media (max-width: 575.98px) {
+      margin-top: 40px;
+    }
+
     &-item {
       width: 491px;
       height: 591px;
       border: 1px solid #000000;
       background-color: #f5f5f6;
 
+      @media (max-width: 575.98px) {
+        height: 530px;
+      }
+
+      @media (max-width: 355.98px) {
+        height: 460px;
+      }
+
       img {
         margin-left: 22px;
         margin-top: -22px;
         max-width: 480px;
+
+        @media (max-width: 575.98px) {
+          width: 100%;
+          margin-top: 0;
+          margin-left: 0;
+        }
       }
 
       h3 {
@@ -246,6 +285,11 @@
 
       &:nth-child(2) {
         margin-left: 80px;
+
+        @media (max-width: 575.98px) {
+          margin-left: 0;
+          margin-top: 20px;
+        }
       }
     }
   }
@@ -261,28 +305,12 @@
     line-height: 28px;
     text-align: center;
     margin: 60px auto 0;
-  }
-}
 
-//////////////////////////////////GUESTS//////////////////////////////////////////
-
-.guests {
-  margin-top: 40px;
-  text-align: center;
-  position: relative;
-  span {
-    font-family: 'Roboto Slab';
-    font-size: 2.7em;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: normal;
-    line-height: normal;
-    text-align: center;
-    text-transform: uppercase;
-  }
-
-  img {
-    max-width: 1400px;
-    margin-top: -90px;
+    @media (max-width: 575.98px) {
+      width: auto;
+      height: auto;
+      text-align: left;
+      margin-bottom: 40px;
+    }
   }
 }

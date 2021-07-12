@@ -48,6 +48,10 @@
     max-width: 1200px;
     justify-content: space-between;
 
+    // @media (max-width: 575.98px) {
+    //   max-width: 320px;
+    // }
+
     &-title {
       padding: 0px 35px 0px 22px;
       background-color: #f71a22;
@@ -55,7 +59,7 @@
       position: relative;
 
       @media (max-width: 575.98px) {
-        margin-right: 0;
+        margin-right: 0px;
       }
 
       h3 {
@@ -71,7 +75,7 @@
 
         @media (max-width: 575.98px) {
           text-align: center;
-          font-size: 2.6em;
+          font-size: 2.2em;
         }
       }
 
@@ -126,7 +130,6 @@
       margin-bottom: 100px;
 
       @media (max-width: 575.98px) {
-        // margin-bottom: 40px;
         margin: 0 auto 40px;
       }
 
