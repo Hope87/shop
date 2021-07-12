@@ -8,8 +8,51 @@ li {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   box-sizing: border-box;
   font-size: 62.5%;
   background-color: #fcf7f7;
+}
+
+.link {
+  position: relative;
+  display: block;
+  padding: 23px 0 22px 27px;
+  width: 212px;
+  height: 63px;
+  font-family: "Myriad Pro", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 16px;
+  text-align: left;
+  color: #ffffff;
+  //box-shadow: -8px 15px 54px rgb(254 113 41);
+  background-color: #f71a22;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 27px;
+    right: 17px;
+    width: 34px;
+    height: 12px;
+    display: block;
+    background: url("../img/right-arrow.png");
+  }
+
+  &:hover {
+    color: #f71a22;
+    border: 1px solid #f71a22;
+    background-color: #ffffff;
+  }
+}
+
+.color-red {
+  color: #fa1921;
 }

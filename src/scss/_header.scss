@@ -1,182 +1,3 @@
-//.header {
-//  overflow: hidden;
-//  &__box {
-//    margin-top: 40px;
-//    display: flex;
-//    align-items: center;
-//
-//    &__img {
-//      display: flex;
-//      justify-content: flex-end;
-//    }
-//  }
-//
-//  &__list {
-//    list-style: none;
-//    display: flex;
-//
-//    &__item {
-//      color: #282828;
-//      font-family: 'PT Root UI';
-//      font-size: 2em;
-//      font-weight: 400;
-//      font-style: normal;
-//      letter-spacing: normal;
-//      line-height: 13.73px;
-//      text-align: left;
-//      text-transform: uppercase;
-//      margin-left: 40px;
-//    }
-//  }
-//
-//  &__title {
-//    color: #535252;
-//    font-family: 'Roboto Slab';
-//    font-size: 81px;
-//    font-weight: 400;
-//    font-style: normal;
-//    letter-spacing: normal;
-//    line-height: 50.65px;
-//    text-align: left;
-//    margin-top: 60px;
-//    margin-left: 19%;
-//  }
-//
-//  &__rectangle {
-//    position: relative;
-//    display: flex;
-//    justify-content: flex-end;
-//    &--1 {
-//      border: 1px solid black;
-//      background-color: #ececed;
-//      position: absolute;
-//      width: 90%;
-//      top: 80px;
-//      left: 240px;
-//      z-index: 2;
-//      height: 580px;
-//    }
-//    &--2 {
-//      border: 1px solid black;
-//      background-color: #ececed;
-//      position: absolute;
-//      width: 90%;
-//      top: 100px;
-//      left: 205px;
-//      z-index: 1;
-//      height: 580px;
-//    }
-//    &--3 {
-//      position: absolute;
-//      width: 70%;
-//      height: 598px;
-//      top: 71px;
-//      left: 460px;
-//      z-index: 3;
-//    }
-//
-//    &__text {
-//      position: absolute;
-//      z-index: 4;
-//      left: 340px;
-//      top: 160px;
-//
-//      div {
-//        display: flex;
-//        align-items: center;
-//
-//        img {
-//          display: block;
-//        }
-//
-//        p {
-//          margin-bottom: 0;
-//          font-family: 'Roboto Slab';
-//          font-size: 3.2em;
-//          font-weight: 400;
-//          font-style: normal;
-//          letter-spacing: normal;
-//          line-height: 48px;
-//          text-align: left;
-//          margin-left: 40px;
-//        }
-//      }
-//    }
-//    &__p {
-//      font-family: 'Myriad Pro';
-//      font-size: 2.4em;
-//      font-weight: 400;
-//      font-style: normal;
-//      letter-spacing: normal;
-//      line-height: 28px;
-//      text-align: left;
-//      margin-top: 60px;
-//    }
-//  }
-//
-//  &__menu {
-//    position: relative;
-//    z-index: 4;
-//    margin-top: 460px;
-//    display: flex;
-//
-//    &__img {
-//      img {
-//        margin-left: 20px;
-//      }
-//    }
-//  }
-//
-//  &__btn {
-//    display: flex;
-//    flex-direction: column;
-//    margin-left: 40px;
-//    justify-content: flex-end;
-//
-//    &__box {
-//      display: flex;
-//      align-items: center;
-//      padding: 0 20px;
-//      width: 212px;
-//      height: 63px;
-//      box-shadow: -8px 15px 54px rgba(254, 113, 41, 0.16);
-//      background-color: #f71a22;
-//
-//      p {
-//        color: #ffffff;
-//        font-family: 'Myriad Pro';
-//        font-size: 2.5em;
-//        font-weight: 400;
-//        font-style: normal;
-//        letter-spacing: normal;
-//        line-height: 32.28px;
-//        text-align: left;
-//        margin-bottom: 0;
-//      }
-//
-//      img {
-//        display: block;
-//        width: 34px;
-//        height: 12px;
-//        margin-left: 20px;
-//      }
-//    }
-//
-//    &__img {
-//      width: 22px;
-//      height: 27px;
-//      margin-top: 60px;
-//      margin-bottom: 20px;
-//    }
-//  }
-//
-//  &__footer {
-//    &__img {
-//      display: block;
-//      margin: 80px auto 0;
-//    }
-//  }
-//}
 .header {
   margin-top: 43px;
 
@@ -202,10 +23,39 @@
   &__list {
     padding: 20px 0 0 0;
     margin: 0;
+
+    @media screen and (max-width: 767px) {
+      position: absolute;
+      left: 0;
+      top: -25px;
+      width: 100%;
+      height: calc(100vh);
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      border-top: 1px solid #444;
+      background-color: rgba(0,0,0,.75);
+      max-height: 0;
+      overflow: hidden;
+      transition: .3s;
+      z-index: 2;
+      opacity: 0;
+
+      &.open {
+        max-height: 100vh;
+        top: 0px;
+        overflow: visible;
+        opacity: 1;
+      }
+    }
   }
 
   &__item {
     margin-right: 58px;
+
+    @media screen and (max-width: 1200px) {
+      margin-right: 25px;
+    }
 
     &-link {
       font-family: "PT Root UI", sans-serif;
@@ -217,6 +67,19 @@
       text-decoration: none;
       color: #282828;
 
+      @media screen and (max-width: 990px) {
+        font-size: 14px;
+      }
+
+      @media screen and (max-width: 767px) {
+        padding: 25px;
+        color: #fff;
+
+        &:hover {
+          background-color: rgba(255,255,255,.1);
+        }
+      }
+
       &:hover {
         color: #f71a22;
       }
@@ -224,14 +87,19 @@
   }
 
   &__title {
+    margin-bottom: 31px;
     font-family: 'Roboto Slab', sans-serif;
-    font-size: 80px;
+    font-size: calc(46px + (75 - 46) * ((100vw - 300px) / (1600 - 300)));
     font-weight: 400;
     font-style: normal;
     text-align: left;
     letter-spacing: normal;
     line-height: 50px;
     color: #535252;
+
+    @media screen and (max-width: 990px) {
+      //padding-top: 21px;
+    }
 
     &-main {
       margin-top: 64px;
@@ -241,6 +109,10 @@
 
   &__inform {
     padding: 0 0 0 203px;
+
+    @media screen and (max-width: 1200px) {
+      padding: 0;
+    }
   }
 
   &__rectangle {
@@ -321,6 +193,14 @@
     &-main {
       padding: 75px 0 0 114px;
 
+      @media screen and (max-width: 767px) {
+        padding: 65px 52px;
+      }
+
+      @media screen and (max-width: 465px) {
+        padding: 65px 23px;
+      }
+
       &:before {
         background-image: url("../img/two-grilled-marbled-beef-steaks-striploin.png");
         background-repeat: no-repeat;
@@ -328,6 +208,10 @@
       }
     }
   }
+}
+
+.mb-6{
+  margin-bottom: 71px;
 }
 
 .slash {
