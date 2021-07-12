@@ -16,7 +16,7 @@ module.exports = {
   },
   entry: {
     main: './src/js/index.js',
-    // cooperation: './src/js/cooperation.js',
+    aboutUs: './src/js/aboutUs.js',
     // number: './src/js/number.js',
     // form: './src/js/form.js',
     // application: './src/js/application.js',
@@ -46,12 +46,12 @@ module.exports = {
       chunks: ['main'],
       path: path.resolve(__dirname, 'dist'),
     }),
-    // new HTMLWebpackPlugin({
-    //   template: './src/html/number.html',
-    //   filename: 'number.html',
-    //   chunks: ['number', 'toddler'],
-    //   path: path.resolve(__dirname, 'dist'),
-    // }),
+    new HTMLWebpackPlugin({
+      template: './src/html/about_us.html',
+      filename: 'about_us.html',
+      chunks: ['aboutUs'],
+      path: path.resolve(__dirname, 'dist'),
+    }),
     // new HTMLWebpackPlugin({
     //   template: './src/html/cooperation.html',
     //   filename: 'cooperation.html',
