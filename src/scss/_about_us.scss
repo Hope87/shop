@@ -46,6 +46,7 @@
   }
 
   &__p {
+    font-size: 1.6em;
     font-family: 'Roboto Slab', sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -200,16 +201,88 @@
     margin-bottom: 60px;
   }
 
-  p {
+  &__headerText {
     width: 1094px;
     height: 106px;
     font-family: 'Myriad Pro';
-    font-size: 24px;
+    font-size: 2.4em;
     font-weight: 400;
     font-style: normal;
     letter-spacing: normal;
     line-height: 28px;
     text-align: center;
     margin: 0 auto;
+  }
+
+  &__cards {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    &-item {
+      width: 491px;
+      height: 591px;
+      border: 1px solid #000000;
+      background-color: #f5f5f6;
+
+      img {
+        margin-left: 22px;
+        margin-top: -22px;
+        max-width: 480px;
+      }
+
+      h3 {
+        height: 17px;
+        color: #fa1921;
+        font-family: 'Roboto Slab';
+        font-size: 2em;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 20px;
+      }
+
+      &:nth-child(2) {
+        margin-left: 80px;
+      }
+    }
+  }
+
+  &__footerText {
+    width: 835px;
+    height: 75px;
+    font-family: 'Myriad Pro';
+    font-size: 2.4em;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 28px;
+    text-align: center;
+    margin: 60px auto 0;
+  }
+}
+
+//////////////////////////////////GUESTS//////////////////////////////////////////
+
+.guests {
+  margin-top: 40px;
+  text-align: center;
+  position: relative;
+  span {
+    font-family: 'Roboto Slab';
+    font-size: 2.7em;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  img {
+    max-width: 1400px;
+    margin-top: -90px;
   }
 }

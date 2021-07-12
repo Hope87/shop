@@ -4,6 +4,10 @@
   font-family: 'Roboto Slab', serif;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 li {
   list-style: none;
 }
@@ -14,7 +18,6 @@ a {
 
 body {
   box-sizing: border-box;
-  font-size: 62.5%;
   background-color: #fcf7f7;
 }
 
@@ -24,7 +27,7 @@ body {
   padding: 23px 0 22px 27px;
   width: 212px;
   height: 63px;
-  font-family: "Myriad Pro", sans-serif;
+  font-family: 'Myriad Pro', sans-serif;
   font-size: 25px;
   font-weight: 400;
   font-style: normal;
@@ -43,7 +46,7 @@ body {
     width: 34px;
     height: 12px;
     display: block;
-    background: url("../img/right-arrow.png");
+    background: url('../img/right-arrow.png');
   }
 
   &:hover {
