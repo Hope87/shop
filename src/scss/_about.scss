@@ -177,9 +177,10 @@
 
   &__house {
     margin-top: 60px;
+    width: 100%;
+    max-width: 175px;
 
     @media (max-width: 575.98px) {
-      width: 100%;
       margin-top: 0px;
     }
   }
