@@ -1,0 +1,96 @@
+.slider {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 40px;
+
+  &__title {
+    color: #535252;
+    font-family: 'Roboto Slab';
+    font-size: 4.5em;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 75px;
+    margin-top: 170px;
+
+    & span {
+      color: #f71a22;
+    }
+  }
+}
+
+.swiper-container {
+  width: 100%;
+  height: 370px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  display: flex;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+
+  & img {
+    display: block;
+    width: 190px;
+    height: 260px;
+    margin-top: 108px;
+    margin-left: 20px;
+    object-fit: cover;
+  }
+
+  &__box {
+    margin-left: 40px;
+    margin-top: 90px;
+    & h3 {
+      font-family: 'Roboto Slab';
+      font-size: 28px;
+      font-weight: 700;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+      text-align: left;
+    }
+
+    & p {
+      width: 240px;
+      height: 98px;
+      font-family: 'PT Root UI';
+      font-size: 20px;
+      font-weight: 300;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+      text-align: left;
+      margin-top: 40px;
+    }
+  }
+}
+
+.swiper-button-next:after {
+  content: url('../img/slider_right.png');
+  margin-top: -230px;
+}
+
+.swiper-button-prev:after {
+  content: url('../img/slider_left.png');
+  margin-top: -230px;
+}

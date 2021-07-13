@@ -9,6 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
     <title>Shop</title>
 </head>
 <body>
@@ -70,7 +74,7 @@
     <!--        </div>-->
 </header>
 <main>
-    <section class="menu">
+    <!-- <section class="menu">
         <div class="d-flex">
             <div class="menu__img">
                 <img src="./img/image_1.png" alt="">
@@ -85,20 +89,20 @@
                 <img class="header__btn__img" src="./img/Polygon.png" alt="">
             </div>
         </div>
-    </section>
+    </section> -->
 
       <!--SECTION HISTORY-->
 
     <section class="history">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12">
+                <div class="col-12 col-sm-12">
                     <h2 class="history__title">Great barbecue and catering<br>
                         <span>in bucks county</span></h2>
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-12 col-sm-6">
                     <div class="history__left">
                         <h4>Our History</h4>
                         <p>At Tim’s Barbecue, We Take Great Pride In Providing Only The Best Meats Available.</p>
@@ -110,7 +114,7 @@
                         <button class="history__btn">Read more</button>
                     </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-12 col-sm-6">
                     <div class="history__right">
                         <div class="history__right-box">
                             <img src="./img/history_image.png" alt="">
@@ -122,7 +126,7 @@
             </div>
 
             <div class="row">
-                <div class="col-sm-12">
+                <div class="col-12 col-sm-12">
                     <div class="history__delicious">
                         <p>We strive to make your special event just that…SPECIAL.<br>
                             Our friendly staff does a wonderful job from start to finish<br>
@@ -155,7 +159,7 @@
       <section class="cards">
         <div class="container">
           <div class="row">
-            <div class="col-sm-12">
+            <div class="col-12 col-sm-12">
               <div class="cards__title">
                 <h3>These Catering Packages Are Based<br> 
                   On <span>A Minimum of 50 Guests</span></h3>
@@ -167,17 +171,17 @@
           </div>
 
           <div class="row">
-            <div class="col-sm-4">
+            <div class="col-12 col-sm-4">
               <div class="cards__image">
                 <img src="./img/card_1.png" alt="">
               </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-12 col-sm-4">
               <div class="cards__image">
                 <img src="./img/card_2.png" alt="">
               </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-12 col-sm-4">
               <div class="cards__image">
                 <img src="./img/card_3.png" alt="">
               </div>
@@ -185,7 +189,7 @@
           </div>
 
           <div class="row">
-            <div class="col-sm-6 d-flex justify-content-end">
+            <div class="col-12 col-sm-6 d-flex justify-content-end">
               <div class="cards__meats">
                 <div class="cards__meats__box">
                   <img src="./img/meat.png" alt="">
@@ -206,7 +210,7 @@
                 </ul>
               </div>
             </div>
-            <div class="col-sm-6 d-flex justify-content-center">
+            <div class="col-12 col-sm-6 d-flex justify-content-center">
               <div class="cards__sides">
                 <div class="cards__sides-box">
                   <img src="./img/tray.png" alt="">
@@ -365,14 +369,16 @@
                     </div>
                    </div>
                   </div>
-                  <div class="orders__list-item" style="width: 400px;"></div>
+                  
+                  <div class="orders__list-item list__item-empty" style="width: 400px;"></div>
+                  
                   <div class="orders__list-item">
                     <div class="orders__list-title title--5">
                      <h3>Beverages</h3>
                      <img src="./img/order_5.png" alt="">
 
                     </div>
-                    <div class="orders__list-menu menu__list">
+                    <div class="orders__list-menu menu__list menu__list--5">
                      <div class="menu__list-item">
                        <p>Homemade Sweet Tea</p>                                    
                        <p>$2</p>
@@ -457,6 +463,69 @@
         </div>
       </section>
 
+      <!--SECTION SLIDER-->
+      
+      <!-- <div class="slider">
+        <div class="container">
+          <div class="row">
+            <div class="col-2"></div>
+            <div class="col-10">
+              <h2 class="slider__title">WHAT OUR<span>CUSTOMERS SAY</span></h2>
+              <div class="swiper-container mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="../img/slider_woman.png" alt="">
+                    <div class="swiper-slide__box">
+                      <h3>Alex alex</h3>
+                      <p>Excellent! Huge 
+                        portions and meat 
+                        was melt in your mouth! 
+                        Thank you!
+                        </p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../img/slider_woman.png" alt="">
+                    <div class="swiper-slide__box">
+                      <h3>Alex alex</h3>
+                      <p>Excellent! Huge 
+                        portions and meat 
+                        was melt in your mouth! 
+                        Thank you!
+                        </p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../img/slider_woman.png" alt="">
+                    <div class="swiper-slide__box">
+                      <h3>Alex alex</h3>
+                      <p>Excellent! Huge 
+                        portions and meat 
+                        was melt in your mouth! 
+                        Thank you!
+                        </p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../img/slider_woman.png" alt="">
+                    <div class="swiper-slide__box">
+                      <h3>Alex alex</h3>
+                      <p>Excellent! Huge 
+                        portions and meat 
+                        was melt in your mouth! 
+                        Thank you!
+                        </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
       <!--SECTION ABOUT-->
 
       <section class="about">
@@ -493,6 +562,8 @@
             </div>
         </div>
     </section>
+
+    
 </main>
 
       <!--FOOTER-->
@@ -501,13 +572,15 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
-              <a href="#">
-                <img src="./img/facebook.png" alt="facebook">
-              </a>
+              <div class="footer__box">
                 <a href="#">
-                <img src="./img/ins.png" alt="instagram">
-              </a>
-                <span>© Copyright Tim's Barbecue, LLC 2021. All Rights Reserved. Bucks County Food Website by FZP Digital</span>
+                  <img src="./img/facebook.png" alt="facebook">
+                </a>
+                  <a href="#">
+                  <img src="./img/ins.png" alt="instagram">
+                </a>
+                  <p>© Copyright Tim's Barbecue, LLC 2021. All Rights Reserved. Bucks County Food Website by FZP Digital</p>
+              </div>
             </div>
         </div>
     </div>
@@ -515,5 +588,19 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script>
+          var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 2,
+            spaceBetween: 60,
+            slidesPerGroup: 2,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+          });
+        </script>
 </body>
 </html>

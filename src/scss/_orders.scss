@@ -3,6 +3,10 @@
   padding-top: 120px;
   position: relative;
   z-index: 1;
+
+  @media (max-width: 575.98px) {
+    padding-top: 20px;
+  }
   &__title {
     h2 {
       color: #fdfafa;
@@ -15,6 +19,10 @@
       text-align: center;
       text-transform: uppercase;
       margin-bottom: 40px;
+
+      @media (max-width: 575.98px) {
+        font-size: 3em;
+      }
     }
     p {
       color: #fdfafa;
@@ -26,6 +34,10 @@
       line-height: 26px;
       text-align: center;
       margin-bottom: 80px;
+
+      @media (max-width: 575.98px) {
+        margin-bottom: 40px;
+      }
     }
   }
 
@@ -42,6 +54,10 @@
       margin-right: 60px;
       position: relative;
 
+      @media (max-width: 575.98px) {
+        margin-right: 10px;
+      }
+
       h3 {
         position: relative;
         color: #fdfafa;
@@ -52,12 +68,21 @@
         letter-spacing: normal;
         line-height: normal;
         text-align: left;
+
+        @media (max-width: 575.98px) {
+          text-align: center;
+          font-size: 2.2em;
+        }
       }
 
       h3::before {
         content: url('../img/Polygon.png');
         left: -70px;
         position: absolute;
+
+        @media (max-width: 575.98px) {
+          display: none;
+        }
       }
     }
 
@@ -71,15 +96,27 @@
         position: absolute;
         top: 51px;
         left: 0;
+
+        @media (max-width: 575.98px) {
+          display: none;
+        }
       }
     }
 
     .title--4 {
       margin-right: 300px;
+
+      @media (max-width: 575.98px) {
+        margin: 0 auto;
+      }
     }
 
     .title--5 {
       margin-right: 220px;
+
+      @media (max-width: 575.98px) {
+        margin-right: 50px;
+      }
     }
 
     &-item {
@@ -88,19 +125,39 @@
       align-items: flex-end;
       margin-bottom: 100px;
 
+      @media (max-width: 575.98px) {
+        margin: 0 auto 40px;
+      }
+
       .menu__list::after {
         content: url('../img/Polygon_left.png');
         display: block;
         position: absolute;
         top: 140px;
         left: -70px;
+
+        @media (max-width: 575.98px) {
+          display: none;
+        }
       }
     }
+
+    .list__item-empty {
+      @media (max-width: 575.98px) {
+        display: none;
+      }
+    }
+
     &-menu {
       margin-top: 15px;
       width: 280px;
       margin-right: -30px;
       position: relative;
+
+      @media (max-width: 575.98px) {
+        margin-right: 10px;
+        margin-left: 20px;
+      }
 
       .menu__list-item {
         display: flex;
@@ -134,6 +191,10 @@
         display: block;
         margin-bottom: 36px;
 
+        @media (max-width: 575.98px) {
+          margin-left: 20px;
+        }
+
         p {
           line-height: normal;
         }
@@ -142,6 +203,17 @@
 
     .menu__list--3 {
       margin-right: 0px;
+
+      @media (max-width: 575.98px) {
+        margin-right: 10px;
+      }
+    }
+
+    .menu__list--5 {
+      @media (max-width: 575.98px) {
+        width: 260px;
+        margin-left: 40px;
+      }
     }
   }
 }

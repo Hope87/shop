@@ -1,9 +1,10 @@
-footer {
+.footer {
   background-color: black;
   padding-top: 20px;
   padding-bottom: 20px;
+  display: flex;
 
-  span {
+  p {
     margin-left: 60px;
     color: #fefcfc;
     font-family: 'Myriad Pro';
@@ -13,9 +14,23 @@ footer {
     letter-spacing: normal;
     line-height: 28px;
     text-align: left;
+
+    @media (max-width: 575.98px) {
+      margin-left: 10px;
+      margin-top: 20px;
+    }
   }
 
   img:first-child {
     margin-right: 10px;
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 575.98px) {
+      display: block;
+    }
   }
 }
