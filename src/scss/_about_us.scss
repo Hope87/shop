@@ -23,39 +23,11 @@
   &__list {
     padding: 20px 0 0 0;
     margin: 0;
-
-    @media screen and (max-width: 767px) {
-      position: absolute;
-      left: 0;
-      top: -25px;
-      width: 100%;
-      height: calc(100vh);
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-evenly;
-      border-top: 1px solid #444;
-      background-color: rgba(0,0,0,.75);
-      max-height: 0;
-      overflow: hidden;
-      transition: .3s;
-      z-index: 2;
-      opacity: 0;
-
-      &.open {
-        max-height: 100vh;
-        top: 0px;
-        overflow: visible;
-        opacity: 1;
-      }
-    }
+    list-style: none;
   }
 
   &__item {
     margin-right: 58px;
-
-    @media screen and (max-width: 1200px) {
-      margin-right: 25px;
-    }
 
     &-link {
       font-family: 'PT Root UI', sans-serif;
@@ -67,29 +39,25 @@
       text-decoration: none;
       color: #282828;
 
-      @media screen and (max-width: 990px) {
-        font-size: 14px;
-      }
-
-      @media screen and (max-width: 767px) {
-        padding: 25px;
-        color: #fff;
-
-        &:hover {
-          background-color: rgba(255,255,255,.1);
-        }
-      }
-
       &:hover {
         color: #f71a22;
       }
     }
   }
 
-  &__title {
-    margin-bottom: 31px;
+  &__p {
     font-family: 'Roboto Slab', sans-serif;
-    font-size: calc(46px + (75 - 46) * ((100vw - 300px) / (1600 - 300)));
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 28px;
+    text-align: left;
+    margin-top: 60px;
+  }
+
+  &__title {
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 80px;
     font-weight: 400;
     font-style: normal;
     text-align: left;
@@ -97,22 +65,14 @@
     line-height: 50px;
     color: #535252;
 
-    @media screen and (max-width: 990px) {
-      //padding-top: 21px;
-    }
-
     &-main {
-      margin-top: 64px;
+      margin-top: 24px;
       margin-bottom: 40px;
     }
   }
 
   &__inform {
     padding: 0 0 0 203px;
-
-    @media screen and (max-width: 1200px) {
-      padding: 0;
-    }
   }
 
   &__rectangle {
@@ -193,48 +153,63 @@
     &-main {
       padding: 75px 0 0 114px;
 
-      @media screen and (max-width: 767px) {
-        padding: 65px 52px;
-      }
-
-      @media screen and (max-width: 465px) {
-        padding: 65px 23px;
-      }
-
       &:before {
-        background-image: url('../img/two-grilled-marbled-beef-steaks-striploin.png');
+        background-image: url('../img/barbecue.png');
         background-repeat: no-repeat;
-        background-position: 205px -11px;
+        background-position: 780px -11px;
       }
     }
   }
+
+  &__btn {
+    position: relative;
+    width: 180px;
+    height: 60px;
+    background-color: #f71a22;
+    color: #ffffff;
+    font-family: 'Myriad Pro';
+    font-size: 1.4em;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 32.28px;
+    text-align: left;
+    padding-left: 20px;
+    border: none;
+    margin-left: 117px;
+  }
+
+  &__btn::after {
+    content: url('../img/right-arrow.png');
+    position: absolute;
+    right: 20px;
+  }
 }
 
-.mb-6{
-  margin-bottom: 71px;
-}
+//////////////////////////////////BBQ//////////////////////////////////////////
+.bbq {
+  margin-top: 80px;
+  h4 {
+    font-family: 'Roboto Slab';
+    font-size: 2em;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 48px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
 
-.slash {
-  background-image: url('../img/Rectangle_small.png');
-  background-repeat: no-repeat;
-  background-position: 0 15%;
-}
-
-.slash-main {
-  background-position: 0 31%;
-}
-
-.triangle {
-  background-image: url("../img/Polygon.png");
-  background-repeat: no-repeat;
-}
-
-//.triangle__menu:after {
-//  content: '';
-//  display: block;
-//}
-
-.triangle__menu {
-  //position: absolute;
-  //background-position: 69.5% 92%;
+  p {
+    width: 1094px;
+    height: 106px;
+    font-family: 'Myriad Pro';
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 28px;
+    text-align: center;
+    margin: 0 auto;
+  }
 }
