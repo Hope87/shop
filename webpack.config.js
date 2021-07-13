@@ -7,6 +7,7 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const TerserJSPlugin = require('terser-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const isDev = process.env.NODE_ENV === 'production' ? 'production' : 'development';
+// const webpack = require('webpack');
 
 module.exports = {
   // context: path.resolve(__dirname, 'src'),
@@ -17,10 +18,10 @@ module.exports = {
   entry: {
     main: './src/js/index.js',
     aboutUs: './src/js/aboutUs.js',
-    // number: './src/js/number.js',
-    // form: './src/js/form.js',
-    // application: './src/js/application.js',
-    // toddler: './src/js/toddler.js',
+    orders: './src/js/orders.js',
+    catering: './src/js/catering.js',
+    find_us: './src/js/find_us.js',
+    products: './src/js/products.js',
   },
   output: {
     filename: 'js/[name].js',
@@ -52,12 +53,30 @@ module.exports = {
       chunks: ['aboutUs'],
       path: path.resolve(__dirname, 'dist'),
     }),
-    // new HTMLWebpackPlugin({
-    //   template: './src/html/cooperation.html',
-    //   filename: 'cooperation.html',
-    //   chunks: ['cooperation'],
-    //   path: path.resolve(__dirname, 'dist'),
-    // }),
+    new HTMLWebpackPlugin({
+      template: './src/html/orders.html',
+      filename: 'orders.html',
+      chunks: ['orders'],
+      path: path.resolve(__dirname, 'dist'),
+    }),
+    new HTMLWebpackPlugin({
+      template: './src/html/catering.html',
+      filename: 'catering.html',
+      chunks: ['catering'],
+      path: path.resolve(__dirname, 'dist'),
+    }),
+    new HTMLWebpackPlugin({
+      template: './src/html/find_us.html',
+      filename: 'find_us.html',
+      chunks: ['find_us'],
+      path: path.resolve(__dirname, 'dist'),
+    }),
+    new HTMLWebpackPlugin({
+      template: './src/html/products.html',
+      filename: 'products.html',
+      chunks: ['products'],
+      path: path.resolve(__dirname, 'dist'),
+    }),
     // new HTMLWebpackPlugin({
     //   template: './src/html/form.html',
     //   filename: 'form.html',

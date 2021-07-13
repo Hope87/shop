@@ -1,15 +1,15 @@
-
 // Для вставки черного блока с мясом, вырезать от сюда
+
 .container__blackBanner {
   width: 100%;
   background-color: black;
   height: 100%;
-  margin-top: 1725px;
+  margin-bottom: 115px;
   position: relative;
 
   &:after {
-    content: "";
-    background-image: url("../img/blackBanner_background_right.png");
+    content: '';
+    background-image: url('../img/blackBanner_background_right.png');
     background-size: cover;
     position: absolute;
     width: 534px;
@@ -24,9 +24,9 @@
 
   &:before {
     position: absolute;
-    content: "";
+    content: '';
     background-size: cover;
-    background-image: url("../img/blackBanner_background_Left.png");
+    background-image: url('../img/blackBanner_background_Left.png');
     height: 700px;
     width: 534px;
     left: 0;
@@ -36,12 +36,15 @@
       content: none;
     }
   }
+}
 
+.catering__blackBanner {
+  margin-bottom: 150px;
 }
 
 .blackBanner {
   position: relative;
-  font-family: "Roboto Slab", sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
   color: #fdfafa;
   display: flex;
   flex-direction: column;
@@ -52,7 +55,6 @@
   }
 
   & > * {
-
     @media (max-width: 991px) {
       //margin-right: 8%;
     }
@@ -92,26 +94,24 @@
     }
 
     &:after {
-      content: "";
-      background-image: url("../img/treugol_red.svg");
+      content: '';
+      background-image: url('../img/treugol_red.svg');
       height: 27px;
       width: 22px;
       position: absolute;
       right: -50px;
       bottom: 10px;
-
     }
 
     &:before {
       transform: rotateY(180deg);
-      content: "";
-      background-image: url("../img/treugol_red.svg");
+      content: '';
+      background-image: url('../img/treugol_red.svg');
       height: 27px;
       width: 22px;
       position: absolute;
       left: -50px;
       bottom: 10px;
-
     }
   }
 
@@ -159,7 +159,6 @@
           @media (max-width: 430px) {
             width: 90%;
           }
-
         }
 
         &__price {
@@ -167,7 +166,7 @@
           display: flex;
           flex-direction: column;
           font-size: 45px;
-          font-family: "PT Root UI", sans-serif;
+          font-family: 'PT Root UI', sans-serif;
           font-weight: bold;
           top: -143px;
           right: -72px;
@@ -185,7 +184,7 @@
           }
 
           &:before {
-            content: "per guest";
+            content: 'per guest';
             font-size: 18px;
             @media (max-width: 430px) {
               font-size: 15px;
@@ -202,13 +201,13 @@
     line-height: 28px;
     margin-top: 50px;
     max-width: 731px;
-    font-family: "GT Eesti Pro Display", sans-serif;
+    font-family: 'GT Eesti Pro Display', sans-serif;
     font-weight: 100;
 
     &-hint {
       font-weight: 600;
       margin-top: 18px;
-      font-family: "GT Eesti Pro Display", sans-serif;
+      font-family: 'GT Eesti Pro Display', sans-serif;
     }
   }
 }
