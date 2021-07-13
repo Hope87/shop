@@ -2,9 +2,33 @@
   position: relative;
   top: -180px;
 
+  @media screen and (max-width: 845px) {
+    top: 0;
+  }
+
   &__img img {
     width: 324px;
     height: 459px;
     margin-right: 20px;
+
+    @media screen and (max-width: 1275px) {
+      &:last-child {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 915px) {
+      &:nth-child(2) {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 845px) {
+      display: none;
+    }
+  }
+
+  &__link {
+    margin-bottom: 105px;
   }
 }
