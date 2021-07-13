@@ -55,6 +55,10 @@
           text-align: center;
           text-transform: uppercase;
           position: relative;
+
+          @media (max-width: 575.98px) {
+            font-size: 3em;
+          }
         }
 
         h2::before {
@@ -283,7 +287,7 @@
       margin-left: 180px;
 
       @media (max-width: 575.98px) {
-        font-size: 1.8em;
+        font-size: 1.6em;
         margin-left: 168px;
       }
     }
@@ -291,6 +295,10 @@
     .orders__text--2 {
       margin-top: 40px;
       margin-left: 20px;
+
+      @media (max-width: 575.98px) {
+        margin-top: 70px;
+      }
     }
 
     .orders__text-sp {
