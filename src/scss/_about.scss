@@ -102,11 +102,19 @@
 .about {
   background-color: #ececed;
 
+  @media (max-width: 575.98px) {
+    padding-left: 20px;
+  }
+
   &__box {
     display: flex;
     align-items: center;
-    margin-top: 70px;
+    margin-top: 60px;
     margin-bottom: 30px;
+
+    @media (max-width: 575.98px) {
+      margin-top: 30px;
+    }
 
     img {
       width: 22px;
@@ -138,6 +146,7 @@
     letter-spacing: normal;
     line-height: 28px;
     text-align: left;
+    margin-bottom: 60px;
   }
 
   &__box--right {
@@ -147,24 +156,17 @@
     @media (max-width: 768.98px) {
       justify-content: inherit;
     }
-
-    @media (max-width: 575.98px) {
-      margin-left: 20px;
-    }
   }
 
   &__info {
     display: flex;
     align-items: center;
-    padding-left: 130px;
+    padding-left: 137px;
 
     @media (max-width: 768.98px) {
       padding-left: 0;
     }
 
-    @media (max-width: 575.98px) {
-      padding-left: 20px;
-    }
     p {
       margin-left: 30px;
       font-family: 'Myriad Pro';
