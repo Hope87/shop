@@ -11,7 +11,7 @@
 
   &__left {
     display: flex;
-    flex: 0.5;
+    flex: 0.4;
     justify-content: flex-end;
     position: relative;
     z-index: 2;
@@ -119,7 +119,7 @@
   }
 
   &__right {
-    flex: 0.5;
+    flex: 0.6;
     background-color: black;
 
     @media (max-width: 575.98px) {
@@ -127,10 +127,14 @@
       padding: 10px;
     }
     .pre-orders__contacts {
-      margin-left: 80px;
+      margin-left: 180px;
       margin-top: 340px;
       position: relative;
       z-index: 2;
+
+      @media (max-width: 1199.98px) {
+        margin-left: 40px;
+      }
 
       @media (max-width: 575.98px) {
         margin-left: 0px;
@@ -256,6 +260,9 @@
     &-img {
       position: absolute;
       bottom: 0;
+      width: 100%;
+      max-width: 1144px;
+      height: 650px;
 
       @media (max-width: 575.98px) {
         width: 100%;
