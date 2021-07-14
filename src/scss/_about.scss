@@ -4,7 +4,7 @@
 }
 .slash__left-top {
   &:before {
-    content: "";
+    content: '';
     background-image: url('../img/Rectangle_small.png');
     background-repeat: no-repeat;
     background-position: 0 15%;
@@ -38,7 +38,6 @@
         justify-content: center;
       }
     }
-
 
     &:after {
       content: 'How we serve our craft barbecue';
@@ -119,7 +118,7 @@
   white-space: nowrap;
   margin-left: auto;
   margin-right: auto;
-  &> span {
+  & > span {
     margin: 0 10px;
   }
 }
@@ -173,6 +172,10 @@
     line-height: 28px;
     text-align: left;
     margin-bottom: 60px;
+
+    @media (max-width: 768.98px) {
+      margin-bottom: -20px;
+    }
   }
 
   &__box--right {
@@ -189,6 +192,10 @@
     align-items: center;
     padding-left: 137px;
 
+    @media (max-width: 1199.98px) {
+      padding-left: 20px;
+    }
+
     @media (max-width: 768.98px) {
       padding-left: 0;
     }
@@ -204,7 +211,7 @@
       text-align: left;
       margin-bottom: 0;
 
-      @media (max-width: 768.98px) {
+      @media (max-width: 1199.98px) {
         font-size: 2em;
       }
     }
