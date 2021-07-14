@@ -2,6 +2,20 @@
 .uppercase {
   text-transform: uppercase;
 }
+.slash__left-top {
+  &:before {
+    content: "";
+    background-image: url('../img/Rectangle_small.png');
+    background-repeat: no-repeat;
+    background-position: 0 15%;
+    position: absolute;
+    left: 5px;
+    top: -75px;
+    width: 21px;
+    height: 21px;
+  }
+}
+
 .county {
   margin-bottom: 85px;
   //margin-left: 16.3%;
@@ -10,9 +24,10 @@
     padding: 0 5%;
   }
   &__title {
+    position: relative;
     font-family: 'Roboto Slab', sans-serif;
     font-size: 45px;
-    margin-top: 50px;
+    margin-top: 100px;
     @media (max-width: 768px) {
       font-size: 35px;
       text-align: center;
@@ -23,6 +38,7 @@
         justify-content: center;
       }
     }
+
 
     &:after {
       content: 'How we serve our craft barbecue';
@@ -103,6 +119,9 @@
   white-space: nowrap;
   margin-left: auto;
   margin-right: auto;
+  &> span {
+    margin: 0 10px;
+  }
 }
 //Стили для блока с хрен пойми чем вот по сюда
 
