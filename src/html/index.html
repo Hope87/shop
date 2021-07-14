@@ -72,7 +72,8 @@
     <section class="history">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-sm-12">
+                <div class="col-12 col-sm-12 d-flex flex-column align-items-center">
+                  <img src="./img/Rectangle_small.png" alt="">
                     <h2 class="history__title">Great barbecue and catering<br>
                         <span>in bucks county</span></h2>
                 </div>
@@ -102,7 +103,7 @@
             </div>
 
             <div class="row">
-                <div class="col-12 col-sm-12 col-md-6">
+                <div class="col-12">
                     <div class="history__delicious">
                         <p>We strive to make your special event just that…SPECIAL.<br>
                             Our friendly staff does a wonderful job from start to finish<br>
@@ -123,7 +124,7 @@
                 <div class="col-sm-12">
                     <div class="guests__box">
                         <span>We Can Serve 40 to 1000 Guests!     We Can Serve 40 to 1000 Guests!   We Can Serve 40 to 1000 Guests!</span>
-                        <img src="./img/man-holding-juicy-grilled-beef-steak.png" alt="">
+                        <img src="../img/Slice_1.png" alt="">
                     </div>
                 </div>
             </div>
@@ -570,8 +571,12 @@
       <div class="slider">
         <div class="container">
           <div class="row">
-            <div class="col-12">
+            <div class="col-1 slider__empty"></div>
+            <div class="col-11">
+              <div class="d-flex flex-column align-items-center">
+                <img src="./img/Rectangle_small.png" alt="">
               <h2 class="slider__title">WHAT OUR<span>CUSTOMERS SAY</span></h2>
+              </div>
               <div class="swiper-container mySwiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
@@ -632,7 +637,7 @@
       <section class="about">
         <div class="container">
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-12 col-lg-6">
                     <div class="about__box about__box--left">
                         <img src="./img/Rectangle_small.png" alt="">
                         <h3>About us</h3>
@@ -643,7 +648,7 @@
                         wood on our custom built smoker. We take no short cuts here, offering the best top quality Angus
                         beef and pork products."</p>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-12 col-lg-4">
                     <div class="about__box about__box--right">
                         <img src="./img/Rectangle_small.png" alt="">
                         <h3>Where to find us</h3>
@@ -657,7 +662,7 @@
                         <p>Saturday – 4-7PM</p>
                     </div>
                 </div>
-                <div class="col-sm-2">
+                <div class="col-sm-12 col-lg-2">
                     <img class="about__house" src="./img/house_small.png" alt="">
                 </div>
             </div>
@@ -693,7 +698,7 @@
         <script>
           var swiper = new Swiper(".mySwiper", {
             slidesPerView: 2,
-            spaceBetween: 60,
+            // spaceBetween: 60,
             slidesPerGroup: 2,
             loop: true,
             loopFillGroupWithBlank: true,
@@ -709,9 +714,9 @@
                 spaceBetween: 20
               },
               // when window width is >= 480px
-              570: {
+              992: {
                 slidesPerView: 2,
-                spaceBetween: 30
+                spaceBetween: 60
               },
             }
           });

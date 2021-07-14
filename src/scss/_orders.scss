@@ -125,6 +125,12 @@
       align-items: flex-end;
       margin-bottom: 100px;
 
+      &:nth-child(4) {
+        @media (max-width: 768.98px) {
+          margin-bottom: 0;
+        }
+      }
+
       @media (max-width: 575.98px) {
         margin: 0 auto 40px;
       }
@@ -143,7 +149,7 @@
     }
 
     .list__item-empty {
-      @media (max-width: 575.98px) {
+      @media (max-width: 991.98px) {
         display: none;
       }
     }
