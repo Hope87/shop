@@ -199,14 +199,15 @@
     font-size: 22px;
     text-align: center;
     line-height: 28px;
-    margin-top: 50px;
+    margin-top: -50px;
+    margin-bottom: 100px;
     max-width: 731px;
     font-family: 'GT Eesti Pro Display', sans-serif;
     font-weight: 100;
 
     &-hint {
       font-weight: 600;
-      margin-top: 18px;
+      margin-top: -50px;
       font-family: 'GT Eesti Pro Display', sans-serif;
     }
   }
