@@ -144,8 +144,11 @@
     justify-content: flex-end;
     margin-bottom: 50px;
 
-    @media (max-width: 575.98px) {
+    @media (max-width: 768.98px) {
       justify-content: inherit;
+    }
+
+    @media (max-width: 575.98px) {
       margin-left: 20px;
     }
   }
@@ -154,6 +157,10 @@
     display: flex;
     align-items: center;
     padding-left: 130px;
+
+    @media (max-width: 768.98px) {
+      padding-left: 0;
+    }
 
     @media (max-width: 575.98px) {
       padding-left: 20px;
@@ -168,6 +175,10 @@
       line-height: 28px;
       text-align: left;
       margin-bottom: 0;
+
+      @media (max-width: 768.98px) {
+        font-size: 2em;
+      }
     }
   }
 
@@ -178,7 +189,11 @@
   &__house {
     margin-top: 60px;
     width: 100%;
-    max-width: 175px;
+    max-width: 360px;
+
+    @media (max-width: 768.98px) {
+      display: none;
+    }
 
     @media (max-width: 575.98px) {
       margin-top: 0px;

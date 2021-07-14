@@ -16,6 +16,12 @@
     margin-bottom: 75px;
     margin-top: 170px;
 
+    @media (max-width: 768.98px) {
+      font-size: 3.2em;
+      margin-top: 22px;
+      margin-bottom: 22px;
+    }
+
     & span {
       color: #f71a22;
     }
@@ -55,11 +61,19 @@
     margin-top: 108px;
     margin-left: 20px;
     object-fit: cover;
+
+    @media (max-width: 575.98px) {
+      margin-left: 10px;
+    }
   }
 
   &__box {
     margin-left: 40px;
     margin-top: 90px;
+
+    @media (max-width: 575.98px) {
+      margin-left: 0;
+    }
     & h3 {
       font-family: 'Roboto Slab';
       font-size: 28px;
@@ -71,8 +85,6 @@
     }
 
     & p {
-      width: 240px;
-      height: 98px;
       font-family: 'PT Root UI';
       font-size: 20px;
       font-weight: 300;
@@ -81,16 +93,28 @@
       line-height: normal;
       text-align: left;
       margin-top: 40px;
+
+      @media (max-width: 575.98px) {
+        font-size: 16px;
+      }
     }
+  }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  top: 15%;
+  outline: none;
+
+  @media (max-width: 768.98px) {
+    display: none;
   }
 }
 
 .swiper-button-next:after {
   content: url('../img/slider_right.png');
-  margin-top: -230px;
 }
 
 .swiper-button-prev:after {
   content: url('../img/slider_left.png');
-  margin-top: -230px;
 }
