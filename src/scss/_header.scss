@@ -1,6 +1,10 @@
 .header {
   margin-top: 43px;
 
+  @media screen and (max-width: 575.98px) {
+    background-color: #fcf7f7;
+  }
+
   &__logo {
     display: inline-block;
     max-width: 111px;
@@ -34,10 +38,10 @@
       align-items: center;
       justify-content: space-evenly;
       border-top: 1px solid #444;
-      background-color: rgba(0,0,0,.75);
+      background-color: rgba(0, 0, 0, 0.75);
       max-height: 0;
       overflow: hidden;
-      transition: .3s;
+      transition: 0.3s;
       z-index: 2;
       opacity: 0;
 
@@ -76,7 +80,7 @@
         color: #fff;
 
         &:hover {
-          background-color: rgba(255,255,255,.1);
+          background-color: rgba(255, 255, 255, 0.1);
         }
       }
 
@@ -96,6 +100,10 @@
     letter-spacing: normal;
     line-height: 50px;
     color: #535252;
+
+    @media screen and (max-width: 575.98px) {
+      text-align: center;
+    }
 
     &-main {
       margin-top: 64px;
@@ -119,6 +127,10 @@
     position: relative;
     min-height: 555px;
     height: 100%;
+
+    @media screen and (max-width: 575.98px) {
+      min-height: 510px;
+    }
 
     &:before {
       content: '';
@@ -164,9 +176,17 @@
       text-align: left;
       color: #000000;
 
+      @media screen and (max-width: 575.98px) {
+        font-size: 28px;
+      }
+
       &-main {
         padding-left: 67px;
         padding-bottom: 53px;
+
+        @media screen and (max-width: 575.98px) {
+          padding-left: 20px;
+        }
       }
 
       &_about-us {
@@ -194,13 +214,17 @@
       line-height: 28px;
       text-align: left;
 
+      @media screen and (max-width: 575.98px) {
+        margin-left: 14px;
+      }
+
       &-main {
         padding-left: 5px;
       }
 
       &_orders {
         max-width: 510px;
-        font-family: "Roboto Slab", sans-serif;
+        font-family: 'Roboto Slab', sans-serif;
         font-size: 20px;
         font-weight: 400;
         font-style: normal;
@@ -292,7 +316,7 @@
     &-item + &-item:before {
       padding: 8px;
       color: black;
-      content: "\003e";
+      content: '\003e';
     }
 
     &-item {
@@ -308,7 +332,6 @@
   }
 
   &__info {
-
     &-link-catering {
       padding-top: 130px;
     }
@@ -318,6 +341,14 @@
       justify-content: space-evenly;
       padding-right: 67px;
 
+      @media screen and (max-width: 575px) {
+        padding-right: 24px;
+      }
+
+      @media screen and (max-width: 325px) {
+        padding-right: 0;
+      }
+
       &_item {
         padding-right: 10px;
       }
@@ -325,7 +356,7 @@
   }
 }
 
-.mb-6{
+.mb-6 {
   margin-bottom: 71px;
 }
 
@@ -333,6 +364,10 @@
   background-image: url('../img/Rectangle_small.png');
   background-repeat: no-repeat;
   background-position: 0 15%;
+
+  @media screen and (max-width: 575px) {
+    background-image: none;
+  }
 }
 
 .slash-main {
@@ -346,7 +381,7 @@
 }
 
 .triangle {
-  background-image: url("../img/Polygon.png");
+  background-image: url('../img/Polygon.png');
   background-repeat: no-repeat;
 }
 
@@ -359,13 +394,7 @@
   color: #fa1921;
 }
 
-
 //.triangle__menu:after {
 //  content: '';
 //  display: block;
 //}
-
-.triangle__menu {
-  //position: absolute;
-  //background-position: 69.5% 92%;
-}

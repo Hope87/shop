@@ -23,7 +23,7 @@ a {
 }
 
 a:hover {
-  color: #f71a22
+  color: #f71a22;
 }
 body {
   box-sizing: border-box;
@@ -46,6 +46,15 @@ body {
   color: #ffffff;
   //box-shadow: -8px 15px 54px rgb(254 113 41);
   background-color: #f71a22;
+
+  @media screen and (max-width: 575px) {
+    font-size: 20px;
+  }
+
+  @media screen and (max-width: 325px) {
+    font-size: 16px;
+    padding: 23px 0 22px 10px;
+  }
 
   &:before {
     content: '';
