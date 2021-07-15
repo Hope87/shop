@@ -43,7 +43,7 @@
 
       &.open {
         max-height: 100vh;
-        top: 0px;
+        top: 0;
         overflow: visible;
         opacity: 1;
       }
@@ -104,6 +104,10 @@
     &-main {
       margin-top: 64px;
       margin-bottom: 40px;
+    }
+
+    &-about-us {
+      margin-bottom: 50px;
     }
   }
 
@@ -168,6 +172,11 @@
         padding-left: 67px;
         padding-bottom: 53px;
       }
+
+      &_about-us {
+        padding-left: 53px;
+        padding-bottom: 50px;
+      }
     }
 
     &-description {
@@ -207,6 +216,54 @@
         background-position: 205px -11px;
       }
     }
+
+    &-about-us {
+      padding: 75px 0 0 95px;
+
+      @media screen and (max-width: 767px) {
+        padding: 65px 52px;
+      }
+
+      @media screen and (max-width: 465px) {
+        padding: 65px 23px;
+      }
+
+      &:before {
+        background-image: url('../img/barbecue.png');
+        background-repeat: no-repeat;
+        background-position: 715px -11px;
+      }
+    }
+  }
+
+  &__breadcrumb {
+    margin-top: 68px;
+    margin-bottom: 40px;
+    padding-left: 24px;
+
+    &-item + &-item:before {
+      padding: 8px;
+      color: black;
+      content: "\003e";
+    }
+
+    &-item {
+      /* Style for "Tim's Barb" */
+
+
+      font-family: 'Roboto', sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: 28px;
+      text-align: left;
+      color: #000000;
+      ///* Text style for "Tim's Barb" */
+      //font-style: normal;
+      //letter-spacing: 0.72px;
+      //line-height: normal;
+    }
   }
 }
 
@@ -223,10 +280,18 @@
 .slash-main {
   background-position: 0 31%;
 }
+.slash-about-us {
+  background-position: 7px 26%;
+}
 
 .triangle {
   background-image: url("../img/Polygon.png");
   background-repeat: no-repeat;
+}
+
+.text-style-red {
+  font-weight: 700;
+  color: #fa1921;
 }
 
 //.triangle__menu:after {
