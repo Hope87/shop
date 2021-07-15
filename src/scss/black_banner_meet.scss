@@ -7,6 +7,7 @@
   margin-bottom: 115px;
   position: relative;
 
+
   &:after {
     content: '';
     background-image: url('../img/blackBanner_background_right.png');
@@ -35,6 +36,12 @@
     @media (max-width: 1400px) {
       content: none;
     }
+  }
+}
+
+.blackBanner__index {
+  @media (max-width: 578px) {
+    margin-bottom: 75px;
   }
 }
 
