@@ -66,6 +66,9 @@
     font-weight: 400;
     margin-bottom: 28px;
     text-align: center;
+    @media (max-width: 768px) {
+      padding-top: 75px;
+    }
   }
 
   &__subtitle {
@@ -200,6 +203,9 @@
     text-align: center;
     line-height: 28px;
     margin-top: -50px;
+    @media (max-width: 780px) {
+      margin-top: 20px;
+    }
     margin-bottom: 100px;
     max-width: 731px;
     font-family: 'GT Eesti Pro Display', sans-serif;
