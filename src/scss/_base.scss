@@ -13,9 +13,13 @@ li {
 }
 
 a {
+  color: #535252;
   text-decoration: none;
 }
 
+a:hover {
+  color: #f71a22
+}
 body {
   box-sizing: border-box;
   background-color: #fcf7f7;
@@ -53,6 +57,10 @@ body {
     color: #f71a22;
     border: 1px solid #f71a22;
     background-color: #ffffff;
+  }
+
+  &__about-us {
+    margin-left: 95px;
   }
 }
 
