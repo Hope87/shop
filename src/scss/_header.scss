@@ -43,7 +43,7 @@
 
       &.open {
         max-height: 100vh;
-        top: 0px;
+        top: 0;
         overflow: visible;
         opacity: 1;
       }
@@ -97,13 +97,13 @@
     line-height: 50px;
     color: #535252;
 
-    @media screen and (max-width: 990px) {
-      //padding-top: 21px;
-    }
-
     &-main {
       margin-top: 64px;
       margin-bottom: 40px;
+    }
+
+    &-about-us {
+      margin-bottom: 50px;
     }
   }
 
@@ -168,10 +168,19 @@
         padding-left: 67px;
         padding-bottom: 53px;
       }
+
+      &_about-us {
+        padding-left: 53px;
+        padding-bottom: 50px;
+      }
+
+      &_orders {
+        max-width: 550px;
+        padding-bottom: 50px;
+      }
     }
 
     &-description {
-      /* Style for "Lorem ipsu" */
       max-width: 609px;
       width: 100%;
       min-height: 78px;
@@ -187,6 +196,35 @@
 
       &-main {
         padding-left: 5px;
+      }
+
+      &_orders {
+        max-width: 510px;
+        font-family: "Roboto Slab", sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        text-align: left;
+        color: #000000;
+        //font-family: "Roboto Slab";
+        //font-weight: 400;
+        //font-style: normal;
+        //letter-spacing: normal;
+        //line-height: normal;
+        ///* Text style for "Stay tuned" */
+        //font-family: "Roboto Slab";
+        //font-weight: 400;
+        //font-style: normal;
+        //letter-spacing: normal;
+        //line-height: normal;
+        ///* Text style for "We Cannot" */
+        //font-family: "Roboto Slab";
+        //font-weight: 700;
+        //font-style: normal;
+        //letter-spacing: normal;
+        //line-height: normal;
       }
     }
 
@@ -207,6 +245,83 @@
         background-position: 205px -11px;
       }
     }
+
+    &-about-us {
+      padding: 75px 0 0 95px;
+
+      @media screen and (max-width: 767px) {
+        padding: 65px 52px;
+      }
+
+      @media screen and (max-width: 465px) {
+        padding: 65px 23px;
+      }
+
+      &:before {
+        background-image: url('../img/barbecue.png');
+        background-repeat: no-repeat;
+        background-position: 715px -11px;
+      }
+    }
+
+    &_orders {
+      padding: 75px 0 0 152px;
+
+      @media screen and (max-width: 767px) {
+        padding: 65px 52px;
+      }
+
+      @media screen and (max-width: 465px) {
+        padding: 65px 23px;
+      }
+
+      &:before {
+        background-image: url('../img/house.png');
+        background-repeat: no-repeat;
+        background-position: 704px -9px;
+        background-size: 58% 104%;
+      }
+    }
+  }
+
+  &__breadcrumb {
+    margin-top: 68px;
+    margin-bottom: 40px;
+    padding-left: 24px;
+
+    &-item + &-item:before {
+      padding: 8px;
+      color: black;
+      content: "\003e";
+    }
+
+    &-item {
+      font-family: 'Roboto', sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: 28px;
+      text-align: left;
+      color: #000000;
+    }
+  }
+
+  &__info {
+
+    &-link-catering {
+      padding-top: 130px;
+    }
+
+    &-box {
+      //width: 137px;
+      justify-content: space-evenly;
+      padding-right: 67px;
+
+      &_item {
+        padding-right: 10px;
+      }
+    }
   }
 }
 
@@ -223,11 +338,27 @@
 .slash-main {
   background-position: 0 31%;
 }
+.slash-about-us {
+  background-position: 7px 26%;
+}
+.slash-orders {
+  background-position: 100px 17%;
+}
 
 .triangle {
   background-image: url("../img/Polygon.png");
   background-repeat: no-repeat;
 }
+
+.text-style-red {
+  font-weight: 700;
+  color: #fa1921;
+}
+
+.color-red {
+  color: #fa1921;
+}
+
 
 //.triangle__menu:after {
 //  content: '';
