@@ -136,6 +136,10 @@
       margin-left: 0;
       margin-right: 24px;
 
+      @media (min-width: 1200.98px) {
+        margin-right: -24px;
+      }
+
       @media (max-width: 1199.98px) {
         margin-right: -20px;
         margin-top: -50px;
@@ -261,6 +265,10 @@
 
     .menu__list--3 {
       margin-right: 0px;
+
+      @media (min-width: 1199.98px) {
+        margin-right: 250px;
+      }
 
       @media (max-width: 575.98px) {
         margin-right: 36px;
