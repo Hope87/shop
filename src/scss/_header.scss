@@ -34,10 +34,10 @@
       align-items: center;
       justify-content: space-evenly;
       border-top: 1px solid #444;
-      background-color: rgba(0,0,0,.75);
+      background-color: rgba(0, 0, 0, 0.75);
       max-height: 0;
       overflow: hidden;
-      transition: .3s;
+      transition: 0.3s;
       z-index: 2;
       opacity: 0;
 
@@ -76,7 +76,7 @@
         color: #fff;
 
         &:hover {
-          background-color: rgba(255,255,255,.1);
+          background-color: rgba(255, 255, 255, 0.1);
         }
       }
 
@@ -200,7 +200,7 @@
 
       &_orders {
         max-width: 510px;
-        font-family: "Roboto Slab", sans-serif;
+        font-family: 'Roboto Slab', sans-serif;
         font-size: 20px;
         font-weight: 400;
         font-style: normal;
@@ -216,7 +216,7 @@
         width: 100%;
         padding-left: 70px;
         padding-bottom: 85px;
-        font-family: "PT Root UI", sans-serif;
+        font-family: 'PT Root UI', sans-serif;
         font-size: 20px;
         font-weight: bold;
         font-style: normal;
@@ -283,23 +283,23 @@
     }
 
     &_product {
-       padding: 75px 0 0 152px;
+      padding: 75px 0 0 152px;
 
-       @media screen and (max-width: 767px) {
-         padding: 65px 52px;
-       }
+      @media screen and (max-width: 767px) {
+        padding: 65px 52px;
+      }
 
-       @media screen and (max-width: 465px) {
-         padding: 65px 23px;
-       }
+      @media screen and (max-width: 465px) {
+        padding: 65px 23px;
+      }
 
-       &:before {
-         background-image: url('../img/product.png');
-         background-repeat: no-repeat;
-         background-position: 704px -9px;
-         background-size: 58% 104%;
-       }
-     }
+      &:before {
+        background-image: url('../img/product.png');
+        background-repeat: no-repeat;
+        background-position: 704px -9px;
+        background-size: 58% 104%;
+      }
+    }
   }
 
   &__breadcrumb {
@@ -310,7 +310,7 @@
     &-item + &-item:before {
       padding: 8px;
       color: black;
-      content: "\003e";
+      content: '\003e';
     }
 
     &-item {
@@ -326,7 +326,6 @@
   }
 
   &__info {
-
     &-link-catering {
       padding-top: 130px;
     }
@@ -363,7 +362,7 @@
       align-items: center;
       width: 155px;
       margin-right: 40px;
-      font-family: "PT Root UI", sans-serif;
+      font-family: 'PT Root UI', sans-serif;
       font-size: 20px;
       font-weight: bold;
       font-style: normal;
@@ -379,7 +378,7 @@
   }
 }
 
-.mb-6{
+.mb-6 {
   margin-bottom: 71px;
 }
 
@@ -404,7 +403,7 @@
 }
 
 .triangle {
-  background-image: url("../img/Polygon.png");
+  background-image: url('../img/Polygon.png');
   background-repeat: no-repeat;
 }
 
@@ -417,13 +416,7 @@
   color: #fa1921;
 }
 
-
 //.triangle__menu:after {
 //  content: '';
 //  display: block;
 //}
-
-.triangle__menu {
-  //position: absolute;
-  //background-position: 69.5% 92%;
-}
