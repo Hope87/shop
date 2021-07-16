@@ -2,6 +2,7 @@
 .uppercase {
   text-transform: uppercase;
 }
+
 .slash__left-top {
   &:before {
     content: '';
@@ -23,6 +24,7 @@
     max-width: 100%;
     padding: 0 5%;
   }
+
   &__title {
     position: relative;
     font-family: 'Roboto Slab', sans-serif;
@@ -32,6 +34,7 @@
       font-size: 35px;
       text-align: center;
     }
+
     & > span {
       display: flex;
       @media (max-width: 768px) {
@@ -57,6 +60,7 @@
       font-weight: 700;
     }
   }
+
   &__items {
     display: flex;
     margin-top: 95px;
@@ -66,6 +70,7 @@
       margin-top: 35px;
       align-items: center;
     }
+
     &__item {
       @media (max-width: 1400px) {
         padding: 0 15px;
@@ -74,9 +79,11 @@
         margin-bottom: 45px;
       }
       font-family: inherit;
+
       & > .alignment > img {
         margin-top: 16px;
       }
+
       &__wrapperImg {
         width: 90px;
         height: 90px;
@@ -86,6 +93,7 @@
           margin: 0 auto;
         }
       }
+
       &_title {
         font-weight: 700;
         font-size: 26px;
@@ -95,6 +103,7 @@
           text-align: center;
         }
       }
+
       &_description {
         font-weight: 400;
         font-size: 22px;
@@ -122,6 +131,7 @@
     margin: 0 10px;
   }
 }
+
 //Стили для блока с хрен пойми чем вот по сюда
 
 .about {
@@ -196,6 +206,7 @@
       padding-left: 20px;
     }
 
+
     @media (max-width: 768.98px) {
       padding-left: 0;
     }
@@ -231,7 +242,13 @@
     }
 
     @media (max-width: 575.98px) {
-      margin-top: 0px;
+      margin-top: 0;
     }
+  }
+}
+
+.county__index-mb {
+  @media (max-width: 768px) {
+    margin-bottom: 0;
   }
 }

@@ -16,16 +16,16 @@
     <title>Shop</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header header_product">
         <div class="container">
             <div class="row">
-                <div class="d-flex align-items-center justify-content-lg-start justify-content-between mb-6">
-                    <a href="#" class="header__logo header__logo--main">
+                <div class="d-flex align-items-center justify-content-lg-start justify-content-between">
+                    <a href="./index.html" class="header__logo">
                         <img src="./img/TimsBBQ_White.png" alt="Tim's Barbecue">
                     </a>
                     <nav class="d-flex align-self-center h-ml-5 site-navbar">
                         <ul class="d-flex header__list">
-                            <li class="header__item"><a href="#" class="header__item-link">home</a></li>
+                            <li class="header__item"><a href="./index.html" class="header__item-link">home</a></li>
                             <li class="header__item"><a href="./about_us.html" class="header__item-link">about us</a></li>
                             <li class="header__item"><a href="./orders.html" class="header__item-link">reviews</a></li>
                             <li class="header__item"><a href="./catering.html" class="header__item-link">catering</a></li>
@@ -47,15 +47,19 @@
             </div>
         </div>
         <div class="container-fluid header__inform">
-            <div class="header__rectangle header__rectangle-main">
-                <h2 class="header__rectangle-title header__rectangle-title-main slash slash-main">Prime Grade Beef Brisket</h2>
-                <p class="header__rectangle-description">Texas Style Barbecue: USDA Prime Grade
+            <div class="header__rectangle header__rectangle_product">
+                <h2 class="header__rectangle-title header__rectangle-title-main text-style-red slash slash-product">Prime Grade Beef Brisket</h2>
+                <p class="header__rectangle-description_product">Texas Style Barbecue: USDA Prime Grade
                     brisket, kosher salt, black pepper. Slow
                     smoked over real oak wood fires for 12
                     to 14 hours until tender.</p>
-                <div class="universal-card__add">
-                    <button class="universal-card__add__button">Add to cart</button>
-                    <input class="universal-card__add__input" type="number" value="5">
+
+                <div class="header__info_product">
+                    <p class="triangle header__info-count">47 in stock</p>
+                    <div class="universal-card__add">
+                        <button class="universal-card__add__button">Add to cart</button>
+                        <input class="universal-card__add__input" type="number" value="5">
+                    </div>
                 </div>
             </div>
         </div>
@@ -125,7 +129,7 @@
 
 
 
-<section class="online-orders">
+<section class="online-orders online-orders_product">
     <div class="container">
         <div class="online-orders__inform">
             <h2 class="online-orders__title color-red">We are creating something
