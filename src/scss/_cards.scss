@@ -186,50 +186,53 @@
 
   &__discounts {
     margin-top: 120px;
-
-    @media (max-width: 767.98px) {
-      margin-top: 60px;
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 
     @media (max-width: 575.98px) {
-      display: none;
+      margin-top: 0;
     }
+
     &-box {
       position: relative;
+      padding: 15px 240px 9px 23px;
+      width: 100%;
+      max-width: 980px;
+      background-color: black;
+      color: white;
+      font-family: 'Roboto Slab';
+      font-size: 2em;
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: normal;
+      text-align: left;
 
-      img {
-        width: 100%;
-        max-width: 1100px;
-        display: block;
-        position: relative;
-        z-index: 1;
-        margin: 0 auto;
+      @media (max-width: 575.98px) {
+        display: none;
       }
 
-      p {
+      &::before {
+        content: url('../img/info.png');
         position: absolute;
-        color: #fdfafa;
-        font-family: 'Roboto Slab';
-        font-size: 2em;
-        font-weight: 400;
-        font-style: normal;
-        letter-spacing: normal;
-        line-height: 38px;
-        text-align: left;
-        z-index: 2;
-        top: 45%;
-        left: 45%;
-        transform: translate(-50%, -50%);
+        left: -108px;
+        top: 0;
 
-        @media (max-width: 1199.98px) {
-          font-size: 1.6em;
-          line-height: normal;
+        @media (max-width: 991.98px) {
+          display: none;
         }
+      }
 
-        @media (max-width: 767.98px) {
-          font-size: 1.1em;
-          line-height: normal;
-        }
+      @media (max-width: 1199.98px) {
+        font-size: 1.6em;
+        line-height: normal;
+        width: 760px;
+      }
+
+      @media (max-width: 767.98px) {
+        font-size: 1.1em;
+        line-height: normal;
+        width: 540px;
       }
     }
 
@@ -237,9 +240,10 @@
       margin-top: 50px;
       padding-left: 150px;
 
-      @media (max-width: 768.98px) {
+      @media (max-width: 991.98px) {
         padding-left: 0;
       }
+
       p {
         font-family: 'Roboto Slab';
         font-size: 2.6em;
