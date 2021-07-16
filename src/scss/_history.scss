@@ -201,6 +201,10 @@
       line-height: 32px;
       text-align: left;
 
+      @media (min-width: 1200px) and (max-width: 1400) {
+        font-size: 1.8em;
+      }
+
       @media (max-width: 575.98px) {
         font-size: 1.8em;
       }
