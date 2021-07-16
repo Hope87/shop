@@ -38,7 +38,7 @@
       align-items: center;
       justify-content: space-evenly;
       border-top: 1px solid #444;
-      background-color: rgba(0, 0, 0, 0.75);
+      background-color: rgba(0, 0, 0, 0.95);
       max-height: 0;
       overflow: hidden;
       transition: 0.3s;
@@ -59,6 +59,10 @@
 
     @media screen and (max-width: 1200px) {
       margin-right: 25px;
+      border-bottom: 1px solid white;
+      width: 50vw;
+      padding-bottom: 10px;
+      text-align: center;
     }
 
     &-link {
@@ -70,17 +74,18 @@
       text-transform: uppercase;
       text-decoration: none;
       color: #282828;
+      padding: 8px 25px 7px;
 
       @media screen and (max-width: 990px) {
-        font-size: 14px;
+        font-size: 21px;
       }
 
       @media screen and (max-width: 767px) {
-        padding: 25px;
+        //padding: 25px;
         color: #fff;
 
         &:hover {
-          background-color: rgba(255, 255, 255, 0.1);
+          //background-color: rgba(255, 255, 255, 0.1);
         }
       }
 
@@ -463,6 +468,9 @@
   color: #fa1921;
 }
 
+.hidden {
+  overflow: hidden;
+}
 //.triangle__menu:after {
 //  content: '';
 //  display: block;
