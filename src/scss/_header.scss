@@ -208,23 +208,22 @@
         line-height: normal;
         text-align: left;
         color: #000000;
-        //font-family: "Roboto Slab";
-        //font-weight: 400;
-        //font-style: normal;
-        //letter-spacing: normal;
-        //line-height: normal;
-        ///* Text style for "Stay tuned" */
-        //font-family: "Roboto Slab";
-        //font-weight: 400;
-        //font-style: normal;
-        //letter-spacing: normal;
-        //line-height: normal;
-        ///* Text style for "We Cannot" */
-        //font-family: "Roboto Slab";
-        //font-weight: 700;
-        //font-style: normal;
-        //letter-spacing: normal;
-        //line-height: normal;
+      }
+
+      &_product {
+        max-width: 440px;
+        min-height: 115px;
+        width: 100%;
+        padding-left: 70px;
+        padding-bottom: 85px;
+        font-family: "PT Root UI", sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 33px;
+        text-align: left;
+        color: #000000;
       }
     }
 
@@ -278,10 +277,29 @@
       &:before {
         background-image: url('../img/house.png');
         background-repeat: no-repeat;
-        background-position: 704px -9px;
+        background-position: 704px -13px;
         background-size: 58% 104%;
       }
     }
+
+    &_product {
+       padding: 75px 0 0 152px;
+
+       @media screen and (max-width: 767px) {
+         padding: 65px 52px;
+       }
+
+       @media screen and (max-width: 465px) {
+         padding: 65px 23px;
+       }
+
+       &:before {
+         background-image: url('../img/product.png');
+         background-repeat: no-repeat;
+         background-position: 704px -9px;
+         background-size: 58% 104%;
+       }
+     }
   }
 
   &__breadcrumb {
@@ -322,6 +340,42 @@
         padding-right: 10px;
       }
     }
+
+    &_product {
+      max-height: 63px;
+      display: flex;
+      align-items: baseline;
+      justify-content: space-around;
+
+      & .universal-card__add {
+        margin-top: 0;
+        padding-bottom: 0;
+
+        &__button {
+          line-height: 23px;
+        }
+      }
+    }
+
+    &-count {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 155px;
+      margin-right: 40px;
+      font-family: "PT Root UI", sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: 33px;
+      text-align: left;
+      color: #fc3b3b;
+    }
+  }
+
+  &_product {
+    margin-bottom: 80px;
   }
 }
 
@@ -343,6 +397,10 @@
 }
 .slash-orders {
   background-position: 100px 17%;
+}
+
+.slash-product {
+  background-position: 22px 17%;
 }
 
 .triangle {
