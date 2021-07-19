@@ -4,6 +4,10 @@
   margin-bottom: 40px;
   margin-top: 80px;
 
+  @media (max-width: 575.98px) {
+    margin-bottom: -60px;
+  }
+
   &__title {
     color: #535252;
     font-family: 'Roboto Slab';
