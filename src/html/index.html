@@ -13,6 +13,12 @@
     rel="stylesheet"
     href="https://unpkg.com/swiper/swiper-bundle.min.css"
   />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+  
     <title>Shop</title>
 </head>
 <body>
@@ -69,7 +75,7 @@
 
       <!--SECTION HISTORY-->
 
-    <section class="history">
+    <section class="history wow bounceInUp">
         <div class="container">
             <div class="row">
                 <h2 class="col-12 county__title county__title-history uppercase slash__left-top">
@@ -118,7 +124,7 @@
 
       <!--SECTION GUESTS-->
 
-    <section class="guests">
+    <section class="guests wow bounceInUp">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-12">
@@ -156,6 +162,9 @@
       <!-- Serve 40 to 1000 Guests!</p> -->
   <section class="container col-12 county county__index-mb">
 
+    
+
+
       <h2 class="county__title uppercase slash__left-top">
         Great barbecue and catering <br>
         <span class="county__title-red county__title-bold">in bucks county</span>
@@ -179,6 +188,8 @@
                   you. You can also pick up our barbecue, or use our delivery service that covers a 5 mile radius.</p>
           </div>
       </div>
+
+      <button class="county__btn">We cater</button>
   
   </section>
 
@@ -584,7 +595,6 @@
             <p class="pre-orders__contacts-info pre-orders__contacts-phone"> 267-549-8150</p>
             <button class="pre-orders__contacts-btn">Find us</button>
           </div>
-          <!-- <img class="pre-orders__right-img" src="./img/pre-orders_image.png" alt=""> -->
 <div class="pre-orders__right-img"></div>
 
         </div>
@@ -687,7 +697,9 @@
                     </div>
                 </div>
                 <div class="col-sm-12 col-lg-2">
-                    <img class="about__house" src="./img/house_small.png" alt="">
+                     <div class="about__house">
+                       <img src="./img/dom.png" alt="">
+                     </div>
                 </div>
             </div>
         </div>
@@ -745,5 +757,7 @@
             }
           });
         </script>
+          <script src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
+          <script>new WOW().init();</script>
 </body>
 </html>

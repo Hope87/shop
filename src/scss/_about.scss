@@ -301,6 +301,53 @@
       }
     }
   }
+
+  &__btn {
+    position: relative;
+    margin-bottom: -118px;
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    width: 212px;
+    height: 63px;
+    background-color: #f71a22;
+    color: #ffffff;
+    font-family: 'Myriad Pro', sans-serif;
+    font-size: 2.5em;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 32.28px;
+    text-align: left;
+    transition: all ease 0.3s;
+    border: 1px solid #ffffff;
+    z-index: 2;
+    border: none;
+
+    &:hover {
+      transition: all ease 0.3s;
+      color: #f71a22;
+      border: 1px solid #f71a22;
+      background-color: #ffffff;
+    }
+
+    @media (max-width: 767.98px) {
+      margin-bottom: -30px;
+      margin-left: 135px;
+    }
+
+    @media (max-width: 575.98px) {
+      margin-bottom: -30px;
+      margin-left: 40px;
+    }
+  }
+
+  &__btn::before {
+    content: url('../img/right-arrow.png');
+    position: absolute;
+    right: 20px;
+  }
 }
 
 .county__title-history::after {
@@ -389,6 +436,11 @@
     @media (max-width: 991.98px) {
       justify-content: inherit;
     }
+
+    @media (max-width: 575.98px) {
+      margin-top: 80px;
+      margin-bottom: 25px;
+    }
   }
 
   &__info {
@@ -396,11 +448,15 @@
     align-items: center;
     padding-left: 137px;
 
+    @media (max-width: 1399.98px) {
+      padding-left: 80px;
+    }
+
     @media (max-width: 1199.98px) {
       padding-left: 20px;
     }
 
-    @media (max-width: 768.98px) {
+    @media (max-width: 991.98px) {
       padding-left: 0;
     }
 
@@ -426,9 +482,19 @@
   }
 
   &__house {
-    margin-top: 48px;
-    width: 100%;
-    max-width: 360px;
+    max-width: 174px;
+    max-height: 151px;
+    margin-top: 60px;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @media (max-width: 991.98px) {
+      margin-bottom: 40px;
+    }
 
     @media (max-width: 768.98px) {
       display: none;

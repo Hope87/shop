@@ -67,6 +67,10 @@
   -webkit-align-items: center;
   align-items: center;
 
+  @media (max-width: 767.98px) {
+    height: 70%;
+  }
+
   & img {
     display: block;
     width: 190px;
@@ -75,11 +79,16 @@
     margin-left: 20px;
     object-fit: cover;
 
+    @media (max-width: 767.98px) {
+      height: 220px;
+      margin-top: 40px;
+    }
+
     @media (max-width: 575.98px) {
       margin-left: 0;
       width: 160px;
       height: 198px;
-      margin-top: 170px;
+      margin-top: 60px;
     }
   }
 
@@ -89,6 +98,7 @@
 
     @media (max-width: 575.98px) {
       margin-left: 0;
+      margin-top: 20px;
     }
     & h3 {
       font-family: 'Roboto Slab';
@@ -116,6 +126,7 @@
 
       @media (max-width: 575.98px) {
         font-size: 14px;
+        margin-top: 30px;
       }
     }
   }
