@@ -84,12 +84,6 @@ module.exports = {
       chunks: ['basket'],
       path: path.resolve(__dirname, 'dist'),
     }),
-    // new HTMLWebpackPlugin({
-    //   template: './src/html/application.html',
-    //   filename: 'application.html',
-    //   chunks: ['application'],
-    //   path: path.resolve(__dirname, 'dist'),
-    // }),
     new CleanWebpackPlugin(), // очищение папки
     new CopyWebpackPlugin({
       patterns: [
