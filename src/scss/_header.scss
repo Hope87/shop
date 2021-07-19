@@ -16,11 +16,18 @@
       width: 100%;
       height: 100%;
       object-fit: contain;
+      min-width: 70px;
     }
 
     &--main {
       pointer-events: none;
       cursor: default;
+    }
+  }
+
+  .media768px_width {
+    @media screen and (max-width: 992px) {
+      max-width: 100%;
     }
   }
 
@@ -38,7 +45,7 @@
       align-items: center;
       justify-content: space-evenly;
       border-top: 1px solid #444;
-      background-color: rgba(0, 0, 0, 0.75);
+      background-color: rgba(0, 0, 0, 0.95);
       max-height: 0;
       overflow: hidden;
       transition: 0.3s;
@@ -56,10 +63,19 @@
 
   &__item {
     margin-right: 58px;
-
+    white-space: nowrap;
     @media screen and (max-width: 1200px) {
       margin-right: 25px;
+
     }
+    @media screen and (max-width: 767px) {
+      border-bottom: 1px solid white;
+      width: 50vw;
+      padding-bottom: 10px;
+      text-align: center;
+      margin-right: 0;
+    }
+
 
     &-link {
       font-family: 'PT Root UI', sans-serif;
@@ -70,22 +86,24 @@
       text-transform: uppercase;
       text-decoration: none;
       color: #282828;
+      transition: all ease 0.3s;
 
       @media screen and (max-width: 990px) {
-        font-size: 14px;
+        font-size: calc(8px + (75 - 46) * ((100vw - 300px) / (1600 - 300)));
       }
 
       @media screen and (max-width: 767px) {
-        padding: 25px;
         color: #fff;
-
+        padding: 8px 25px 7px;
+        font-size: calc(14px + (75 - 46) * ((100vw - 300px) / (1600 - 300)));
         &:hover {
-          background-color: rgba(255, 255, 255, 0.1);
+          //background-color: rgba(255, 255, 255, 0.1);
         }
       }
 
       &:hover {
         color: #f71a22;
+        transition: all ease 0.3s;
       }
     }
   }
@@ -100,6 +118,7 @@
     letter-spacing: normal;
     line-height: 50px;
     color: #535252;
+
 
     @media screen and (max-width: 575.98px) {
       text-align: center;
@@ -438,9 +457,11 @@
 .slash-main {
   background-position: 0 31%;
 }
+
 .slash-about-us {
   background-position: 7px 26%;
 }
+
 .slash-orders {
   background-position: 100px 17%;
 }
@@ -461,6 +482,19 @@
 
 .color-red {
   color: #fa1921;
+}
+
+.hidden {
+  overflow: hidden;
+}
+
+.hover {
+  transition: all ease 0.3s;
+
+  &:hover {
+    transition: all ease 0.3s;
+    box-shadow: 0 0 100px 18px rgba(34, 60, 80, 0.2);
+  }
 }
 
 //.triangle__menu:after {

@@ -2,6 +2,7 @@
 const navToggler = document.querySelector('.nav-toggler');
 const navMenu = document.querySelector('.site-navbar ul');
 const navLinks = document.querySelectorAll('.site-navbar a');
+const body = document.querySelector('body');
 
 // load all event listners
 allEventListners();
@@ -18,6 +19,7 @@ function allEventListners() {
 function togglerClick() {
     navToggler.classList.toggle('toggler-open');
     navMenu.classList.toggle('open');
+    body.classList.toggle('hidden')
 }
 
 // navLinkClick function

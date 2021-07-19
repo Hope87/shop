@@ -22,6 +22,7 @@ module.exports = {
     catering: './src/js/catering.js',
     find_us: './src/js/find_us.js',
     products: './src/js/products.js',
+    basket: './src/js/basket.js',
   },
   output: {
     filename: 'js/[name].js',
@@ -77,12 +78,12 @@ module.exports = {
       chunks: ['products'],
       path: path.resolve(__dirname, 'dist'),
     }),
-    // new HTMLWebpackPlugin({
-    //   template: './src/html/form.html',
-    //   filename: 'form.html',
-    //   chunks: ['form'],
-    //   path: path.resolve(__dirname, 'dist'),
-    // }),
+    new HTMLWebpackPlugin({
+      template: './src/html/basket.html',
+      filename: 'basket.html',
+      chunks: ['basket'],
+      path: path.resolve(__dirname, 'dist'),
+    }),
     // new HTMLWebpackPlugin({
     //   template: './src/html/application.html',
     //   filename: 'application.html',

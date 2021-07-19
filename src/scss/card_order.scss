@@ -2,11 +2,13 @@
 .blackBanner_orders {
   width: 100%;
   background-color: black;
-  height: 1093px;
+  max-height: 1093px;
   position: relative;
   margin-bottom: 240px;
   @media (max-width: 850px) {
     height: 100%;
+    margin-bottom: 0;
+    max-height: 100%;
   }
 }
 
@@ -40,6 +42,10 @@
     font-weight: 400;
     text-transform: uppercase;
     margin-top: 14px;
+    text-align: center;
+    @media (max-width: 768px) {
+      font-size: 35px;
+    }
   }
 
   &__wrapper {
@@ -51,7 +57,7 @@
     }
 
     &__single-item {
-      height: 832px;
+      height: 780px;
       position: relative;
       width: 100%;
       max-width: 568px;
@@ -116,12 +122,13 @@
     font-size: 25px;
     padding: 40px 63px;
     letter-spacing: 0.4px;
-    width: 100%;
+    width: 94%;
     position: relative;
-    margin: 23px 0 0 76px;
+    margin: 23px 0 0 42px;
     @media (max-width: 1200px) {
       height: 95px;
-      padding: 0 63px;
+      padding: 0 0 0 35px;
+      margin: 23px 0 0 76px;
     }
     @media (max-width: 991px) {
       padding: 0 0 0 63px;
@@ -241,7 +248,8 @@
       margin-right: 22px;
       transition: all ease 0.4s;
       @media (max-width: 450px) {
-        padding: 14px 5px;
+        padding: 14px 22px;
+        font-size: 18px
       }
 
       &:hover {
@@ -283,11 +291,14 @@
     font-weight: 400;
     text-transform: uppercase;
     margin-top: 40px;
+    @media (max-width: 768px) {
+      font-size: 35px;
+    }
   }
 
   &__content {
     display: flex;
-    width: 100%;
+    width: 90%;
     justify-content: center;
     @media (max-width: 1300px) {
       flex-direction: column;
@@ -300,20 +311,20 @@
       &__title {
         max-width: 243px;
         padding: 33px 0 0 0;
-        margin-right: -107px;
+        margin-right: 0;
+        right: 0;
+        width: 53%;
         position: absolute;
         @media (max-width: 991px) {
-          max-width: 390px;
-          margin-right: 0;
-        }
-        @media (max-width: 550px) {
-          padding-left: 10px;
-          padding-right: 10px;
+          width: 100%;
+          padding-left: 20px;
+          padding-right: 20px;
+          max-width: 100%;
         }
 
         &:before {
           transform: rotateZ(270deg);
-          left: -112px;
+          left: -50%;
           @media (max-width: 991px) {
             left: 50%;
 
@@ -327,14 +338,18 @@
         @media (max-width: 550px) {
           flex-direction: row;
           justify-content: space-around;
-          padding: 0 20px;
+          padding: 0 10px;
           margin-top: 155px;
         }
+
 
         &__mainInfo {
           &__price {
             margin-left: calc(42px - 4vw);
             margin-top: 50px;
+            @media (max-width: 350px) {
+              margin-left: 0;
+            }
           }
         }
 
@@ -348,7 +363,14 @@
     }
   }
 }
+
 .products__whiteBanner_orders__mt {
   margin-top: 0;
 }
+
+.margin_bottom_blackBanner_orders {
+  margin-bottom: 290px;
+}
+
+
 //Страница orders черные блоки
