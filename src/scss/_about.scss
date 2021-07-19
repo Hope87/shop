@@ -321,7 +321,6 @@
     line-height: 32.28px;
     text-align: left;
     transition: all ease 0.3s;
-    border: 1px solid #ffffff;
     z-index: 2;
     border: none;
 
@@ -510,4 +509,9 @@
   @media (max-width: 768px) {
     margin-bottom: 0;
   }
+}
+
+.margin__basket {
+  margin-top: 212px;
+  margin-bottom: 236px;
 }
