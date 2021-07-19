@@ -51,63 +51,75 @@
     </div>
 </header>
 <main>
-    <section class="basket mb-6">
+    <section class="basket">
         <div class="container">
             <div class="row">
-                <table>
+                <table class="basket-table">
                     <thead>
-                    <th></th>
-                    <th>Product</th>
-                    <th>Price</th>
-                    <th>Quantity</th>
-                    <th>Subtotal</th>
+                    <th class="table__th table__th-delete"></th>
+                    <th class="table__th table__th-product">Product</th>
+                    <th class="table__th table__th-price">Price</th>
+                    <th class="table__th table__th-quantity">Quantity</th>
+                    <th class="table__th table__th-price">Subtotal</th>
                     </thead>
                     <tbody>
-                    <tr>
-                        <td></td>
+                    <tr  class="table__tr">
+                        <td class="table__tr-delete">
+                            <button type="button" class="btn-delete"></button>
+                        </td>
                         <td>
-                            <div>
-                                <img src="./img/Слой_26.png" alt="">
+                            <div class="d-flex align-items-center table__td-product">
+                                <div class="table__td-product-img">
+                                    <img src="./img/Слой_26.png" alt="">
+                                </div>
+                                <p class="table__td-product-label">Smitty Brisket Cheesesteak</p>
                             </div>
-                            <p>Smitty Brisket
-                                Cheesesteak</p>
+
                         </td>
                         <td class="universal-card__content__mainInfo__price whiteBanner_orders__content__card__content__mainInfo__price">$13</td>
-                        <td>
+                        <td class="table__td">
                             <div class="universal-card__add">
                                 <input class="universal-card__add__input" type="number" value="5">
                             </div>
                         </td>
                         <td class="universal-card__content__mainInfo__price whiteBanner_orders__content__card__content__mainInfo__price">$13</td>
                     </tr>
-                    <tr>
-                        <td></td>
+                    <tr  class="table__tr">
+                        <td class="table__tr-delete">
+                            <button type="button" class="btn-delete"></button>
+                        </td>
                         <td>
-                            <div>
-                                <img src="./img/Слой_26.png" alt="">
+                            <div class="d-flex align-items-center table__td-product">
+                                <div class="table__td-product-img">
+                                    <img src="./img/Слой_26.png" alt="">
+                                </div>
+                                <p class="table__td-product-label">Smitty Brisket Cheesesteak</p>
                             </div>
-                            <p>Texas Brisket w/Pickles
-                                and Onions</p>
+
                         </td>
                         <td class="universal-card__content__mainInfo__price whiteBanner_orders__content__card__content__mainInfo__price">$60</td>
-                        <td>
+                        <td class="table__td">
                             <div class="universal-card__add">
                                 <input class="universal-card__add__input" type="number" value="5">
                             </div>
                         </td>
                         <td class="universal-card__content__mainInfo__price whiteBanner_orders__content__card__content__mainInfo__price">$13</td>
                     </tr>
-                    <tr>
-                        <td></td>
+                    <tr class="table__tr">
+                        <td class="table__tr-delete">
+                            <button type="button" class="btn-delete"></button>
+                        </td>
                         <td>
-                            <div>
-                                <img src="./img/Слой_26.png" alt="">
+                            <div class="d-flex align-items-center table__td-product">
+                                <div class="table__td-product-img">
+                                    <img src="./img/Слой_26.png" alt="">
+                                </div>
+                                <p class="table__td-product-label">Smitty Brisket Cheesesteak</p>
                             </div>
-                            <p>Smitty Brisket
-                                Cheesesteak</p>
+
                         </td>
                         <td class="universal-card__content__mainInfo__price whiteBanner_orders__content__card__content__mainInfo__price">$13</td>
-                        <td>
+                        <td class="table__td">
                             <div class="universal-card__add">
                                 <input class="universal-card__add__input" type="number" value="5">
                             </div>
@@ -118,6 +130,28 @@
                 </table>
             </div>
         </div>
+    </section>
+    <section class="container col-12 county county__index-mb">
+
+        <h2 class="county__title uppercase slash__left-top">
+            Great barbecue and catering <br>
+            <span class="county__title-red county__title-bold">in bucks county</span>
+
+        </h2>
+
+        <div class="county__items">
+            <div class="county__items__item"><div class="county__items__item__wrapperImg"><img src="./img/bbq.png" alt="" class="county__items__item_img"></div>
+                <h3 class="county__items__item_title">FULL SERVICE CATERING</h3>
+                <p class="county__items__item_description">To get the FULL Tim’s Barbecue experience in your home,
+                    backyard, corporate setting, or anywhere else, let us come and do all the work.</p>
+            </div>
+            <div class="county__items__item"><div class="county__items__item__wrapperImg"><img src="./img/soup.png" alt="" class="county__items__item_img"></div>
+                <h3 class="county__items__item_title">ONSITE COOKING</h3>
+                <p class="county__items__item_description">For catering orders, we can bring our delicious barbecue to
+                    you. You can also pick up our barbecue, or use our delivery service that covers a 5 mile radius.</p>
+            </div>
+        </div>
+
     </section>
     <section class="online-orders">
         <div class="container">
