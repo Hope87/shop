@@ -1,0 +1,94 @@
+.table {
+  width: 100%;
+  margin-bottom: 57px;
+  border-collapse: collapse;
+  padding: 0;
+  border-bottom-width: 0;
+  box-shadow: none;
+
+  &__th {
+    font-family: "PT Root UI", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 33px;
+    text-align: left;
+    color: #000000;
+
+    &-delete {
+      min-width: 166px;
+    }
+
+    &-product {
+      min-width: 360px;
+    }
+
+    &-price {
+      min-width: 77px;
+    }
+
+    &-quantity {
+      min-width: 104px;
+    }
+  }
+
+  &__tr {
+    width: 1266px;
+    max-height: 136px;
+
+    &:nth-child(odd) {
+      border: 1px solid #000000;
+      background-color: #f5f5f6;
+    }
+
+    &-delete {
+      padding: 50px 50px 58px 87px;
+    }
+  }
+
+  &__td {
+
+    &-product {
+      height: 80px;
+
+      &-img {
+        width: 80px;
+        height: 80px;
+        margin-right: 31px;
+
+        & img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      &-label {
+        padding: 16px 0 13px;
+        max-width: 163px;
+        color: #000000;
+        font-family: "Roboto Slab", sans-serif;
+        font-size: 22px;
+        font-weight: bold;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 30px;
+        text-align: left;
+      }
+    }
+
+    & .universal-card__add {
+      padding-bottom: 0;
+    }
+  }
+}
+
+.btn-delete {
+  width: 29px;
+  height: 29px;
+  background-image: url("../img/remove.svg");
+  background-position: center;
+  border: none;
+  background-color: initial;
+}
