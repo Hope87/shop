@@ -31,6 +31,7 @@ body {
 }
 
 .link {
+  transition: all ease 0.3s;
   position: relative;
   display: block;
   padding: 23px 0 22px 27px;
@@ -46,7 +47,7 @@ body {
   color: #ffffff;
   //box-shadow: -8px 15px 54px rgb(254 113 41);
   background-color: #f71a22;
-
+  border: 1px solid #ffffff;
   @media screen and (max-width: 575px) {
     font-size: 20px;
   }
@@ -57,6 +58,7 @@ body {
   }
 
   &:before {
+    transition: all ease 0.3s;
     content: '';
     position: absolute;
     top: 27px;
@@ -68,6 +70,7 @@ body {
   }
 
   &:hover {
+    transition: all ease 0.3s;
     color: #f71a22;
     border: 1px solid #f71a22;
     background-color: #ffffff;

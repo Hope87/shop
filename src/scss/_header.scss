@@ -169,6 +169,7 @@
         border: none;
         background-color: inherit;
       }
+
     }
 
     &:after {
@@ -292,11 +293,17 @@
         padding: 65px 23px;
       }
 
+
       &:before {
         background-image: url('../img/two-grilled-marbled-beef-steaks-striploin.png');
         background-repeat: no-repeat;
-        background-position: 205px -11px;
+        background-position: 11vw -11px;
+        @media screen and (max-width: 805px) {
+          background-position: 27vw -11px;
+        }
       }
+
+
     }
 
     &-about-us {
@@ -368,13 +375,18 @@
     }
 
     &-item {
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Roboto Slab', serif;
       font-size: 18px;
-      font-weight: 400;
+      font-weight: 400 !important;
       font-style: normal;
       letter-spacing: normal;
       line-height: 28px;
       text-align: left;
+      color: #000000;
+
+    }
+
+    &-link  {
       color: #000000;
     }
   }
