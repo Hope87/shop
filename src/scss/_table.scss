@@ -83,6 +83,34 @@
     }
   }
 }
+@media screen and (max-width: 1040px) {
+  .basket {
+    min-height: 716px;
+    height: 100%;
+  }
+
+  table.basket-table thead {
+    display: none;
+  }
+  table.basket-table tr {
+    max-width: 800px;
+    display: block;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #e8e9eb;
+  }
+  table.basket-table td {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  table.basket-table td:before {
+    content: attr(aria-label);
+    float: left;
+    font-weight: bold;
+  }
+}
+
 
 .btn-delete {
   width: 29px;
