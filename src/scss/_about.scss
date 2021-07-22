@@ -178,7 +178,7 @@
             width: 80vw;
           }
           @media (max-width: 584px) {
-            width: 97vw;
+            width: 94vw;
           }
         }
 
@@ -514,4 +514,13 @@
 .margin__basket {
   margin-top: 212px;
   margin-bottom: 236px;
+
+  @media (max-width: 991px) {
+    margin-top: 0;
+  }
+
+  @media (max-width: 768px) {
+    margin-bottom: 133px;
+  }
+
 }
