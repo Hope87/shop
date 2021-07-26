@@ -169,7 +169,6 @@
         border: none;
         background-color: inherit;
       }
-
     }
 
     &:after {
@@ -297,7 +296,6 @@
         padding: 65px 23px;
       }
 
-
       &:before {
         background-image: url('../img/two-grilled-marbled-beef-steaks-striploin.png');
         background-repeat: no-repeat;
@@ -306,8 +304,6 @@
           background-position: 27vw -11px;
         }
       }
-
-
     }
 
     &-about-us {
@@ -387,10 +383,9 @@
       line-height: 28px;
       text-align: left;
       color: #000000;
-
     }
 
-    &-link  {
+    &-link {
       color: #000000;
     }
 
@@ -493,6 +488,10 @@
 .triangle {
   background-image: url('../img/Polygon.png');
   background-repeat: no-repeat;
+
+  @media screen and (max-width: 575px) {
+    display: none;
+  }
 }
 
 .text-style-red {
