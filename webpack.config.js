@@ -93,9 +93,12 @@ module.exports = {
         },
         {
           from: path.resolve(__dirname, '../src/fonts'),
-
           to: path.resolve(__dirname, '../dist/fonts'),
           noErrorOnMissing: true,
+        },
+        {
+          from: path.resolve(__dirname, './src/scss'),
+          to: path.resolve(__dirname, 'dist/styles'),
         },
         // {
         //   from: path.resolve(__dirname, './src/video'),
