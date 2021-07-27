@@ -53,6 +53,7 @@
     "core-js": "^3.6.5",
     "handlebars": "^4.7.6",
     "jquery": "^3.6.0",
-    "wow.js": "^1.2.2"
+    "wow.js": "^1.2.2",
+    "cssnano": "latest"
   }
 }
