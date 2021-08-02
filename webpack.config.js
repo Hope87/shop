@@ -2,7 +2,7 @@ const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const miniCss = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const TerserJSPlugin = require('terser-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
@@ -10,10 +10,14 @@ const isDev = process.env.NODE_ENV === 'production' ? 'production' : 'developmen
 // const webpack = require('webpack');
 
 module.exports = {
-   // context: path.resolve(__dirname, 'src'),
    mode: 'development',
    devServer: {
-      contentBase: './dist',
+      historyApiFallback: true,
+      contentBase: path.resolve(__dirname, './dist'),
+      open: true,
+      compress: true,
+      hot: true,
+      port: 8080,
    },
    entry: {
       main: './src/js/index.js',
@@ -85,6 +89,7 @@ module.exports = {
          path: path.resolve(__dirname, 'dist'),
       }),
       new CleanWebpackPlugin(), // очищение папки
+
       new CopyWebpackPlugin({
          patterns: [
             {
@@ -92,51 +97,27 @@ module.exports = {
                to: path.resolve(__dirname, 'dist/img'),
             },
             {
-               from: path.resolve(__dirname, '../src/fonts'),
-               to: path.resolve(__dirname, '../dist/fonts'),
+               from: path.resolve(__dirname, 'src/fonts'),
+               to: path.resolve(__dirname, 'dist/fonts'),
                noErrorOnMissing: true,
-            },
-            {
-               from: path.resolve(__dirname, './src/scss'),
-               to: path.resolve(__dirname, 'dist/styles'),
-            },
-            // {
-            //   from: path.resolve(__dirname, './src/video'),
-            //   to: path.resolve(__dirname, 'dist/video'),
-            // },
-            // { from: path.resolve(__dirname, './src/js/buttons.js'), to: path.resolve(__dirname, 'dist/js/buttons.js') },
-            // { from: path.resolve(__dirname, './src/html'), to: path.resolve(__dirname, 'dist') },
+            }
          ],
       }),
-      new MiniCssExtractPlugin({
-         // Options similar to the same options in webpackOptions.output
-         // both options are optional
-         filename: 'css/[name].[hash].css',
-         chunkFilename:  'css/[id].[hash].css',
+      new miniCss({
+         filename: "css/[name].css",
+         chunkFilename: "css/[id].css",
       }),
-
-      new OptimizeCssAssetsPlugin({
-        assetNameRegExp: /\.optimize\.css$/g,
-        cssProcessor: require('cssnano'),
-        cssProcessorPluginOptions: {
-          preset: ['default', { discardComments: { removeAll: true } }],
-        },
-        canPrint: true
-      })
    ],
    module: {
       rules: [
          {
-            test: /\.(s*)css$/,
-            use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
+            test:/\.(s*)css$/,
+            use: [
+               miniCss.loader,
+               'css-loader',
+               'sass-loader',
+            ]
          },
-         // {
-         //     test: /\.js$/,
-         //     exclude: /node_modules/,
-         //     use: {
-         //         loader: "babel-loader"
-         //     }
-         // },
          {
             test: /\.(ttf|woff|woff2|eot|otf)$/,
             use: [
