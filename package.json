@@ -51,9 +51,10 @@
   "dependencies": {
     "copy-webpack-plugin": "^6.2.0",
     "core-js": "^3.6.5",
+    "cssnano": "latest",
     "handlebars": "^4.7.6",
     "jquery": "^3.6.0",
-    "wow.js": "^1.2.2",
-    "cssnano": "latest"
+    "swiper": "^6.8.0",
+    "wow.js": "^1.2.2"
   }
 }
