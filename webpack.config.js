@@ -1,5 +1,5 @@
 const path = require('path');
-const HTMLWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const miniCss = require('mini-css-extract-plugin');
@@ -46,48 +46,15 @@ module.exports = {
       }
    },
    plugins: [
-      new HTMLWebpackPlugin({
-         template: './src/html/index.html',
-         filename: 'index.html',
-         chunks: ['main'],
-         path: path.resolve(__dirname, 'dist'),
+      ...['index', 'about_us', 'orders', 'catering', 'find_us', 'products', 'basket'].map((event) => {
+         return new HtmlWebpackPlugin({
+            template: `./src/html/${event}.html`,
+            filename: `${event}.htm`,
+            chunks: [`${event}`],
+            path: path.resolve(__dirname, 'dist'),
+         })
       }),
-      new HTMLWebpackPlugin({
-         template: './src/html/about_us.html',
-         filename: 'about_us.html',
-         chunks: ['aboutUs'],
-         path: path.resolve(__dirname, 'dist'),
-      }),
-      new HTMLWebpackPlugin({
-         template: './src/html/orders.html',
-         filename: 'orders.html',
-         chunks: ['orders'],
-         path: path.resolve(__dirname, 'dist'),
-      }),
-      new HTMLWebpackPlugin({
-         template: './src/html/catering.html',
-         filename: 'catering.html',
-         chunks: ['catering'],
-         path: path.resolve(__dirname, 'dist'),
-      }),
-      new HTMLWebpackPlugin({
-         template: './src/html/find_us.html',
-         filename: 'find_us.html',
-         chunks: ['find_us'],
-         path: path.resolve(__dirname, 'dist'),
-      }),
-      new HTMLWebpackPlugin({
-         template: './src/html/products.html',
-         filename: 'products.html',
-         chunks: ['products'],
-         path: path.resolve(__dirname, 'dist'),
-      }),
-      new HTMLWebpackPlugin({
-         template: './src/html/basket.html',
-         filename: 'basket.html',
-         chunks: ['basket'],
-         path: path.resolve(__dirname, 'dist'),
-      }),
+
       new CleanWebpackPlugin(), // очищение папки
 
       new CopyWebpackPlugin({
