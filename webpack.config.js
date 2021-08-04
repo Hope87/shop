@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const miniCss = require('mini-css-extract-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const TerserJSPlugin = require('terser-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
@@ -20,7 +20,7 @@ module.exports = {
       port: 8080,
    },
    entry: {
-      main: './src/js/index.js',
+      index: './src/js/index.js',
       aboutUs: './src/js/aboutUs.js',
       orders: './src/js/orders.js',
       catering: './src/js/catering.js',
@@ -32,26 +32,41 @@ module.exports = {
       filename: 'js/[name].js',
       path: path.resolve(__dirname, 'dist'),
    },
-   optimization: {
-      minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})],
-      splitChunks: {
-         cacheGroups: {
-            styles: {
-               name: 'style',
-               test: /\.css$/,
-               chunks: 'all',
-               enforce: true,
-            },
-         },
-      }
-   },
+   // optimization: {
+   //    minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})],
+   //    splitChunks: {
+   //       cacheGroups: {
+   //          styles: {
+   //             name: 'style',
+   //             test: /\.css$/,
+   //             chunks: 'all',
+   //             enforce: true,
+   //          },
+   //       },
+   //    }
+   // },
    plugins: [
       ...['index', 'about_us', 'orders', 'catering', 'find_us', 'products', 'basket'].map((event) => {
          return new HtmlWebpackPlugin({
             template: `./src/html/${event}.html`,
             filename: `${event}.htm`,
-            chunks: [`${event}`],
+            chunks: [event],
             path: path.resolve(__dirname, 'dist'),
+            // minify: {
+            //    html5                          : true,
+            //    collapseWhitespace             : true,
+            //    minifyCSS                      : true,
+            //    minifyJS                       : true,
+            //    minifyURLs                     : false,
+            //    removeAttributeQuotes          : true,
+            //    removeComments                 : true, // false for Vue SSR to find app placeholder
+            //    removeEmptyAttributes          : true,
+            //    removeOptionalTags             : true,
+            //    removeRedundantAttributes      : true,
+            //    removeScriptTypeAttributes     : true,
+            //    removeStyleLinkTypeAttributese : true,
+            //    useShortDoctype                : true
+            // },
          })
       }),
 
@@ -70,20 +85,22 @@ module.exports = {
             }
          ],
       }),
-      new miniCss({
-         filename: "css/[name].css",
-         chunkFilename: "css/[id].css",
-      }),
+      new MiniCssExtractPlugin(
+          {
+             filename: "css/[name].css",
+             chunkFilename: "css/[id].css",
+          }),
    ],
+   resolve: { extensions: ["*", ".js", ".jsx"] },
    module: {
       rules: [
          {
             test:/\.(s*)css$/,
             use: [
-               miniCss.loader,
-               'css-loader',
-               'sass-loader',
-            ]
+               MiniCssExtractPlugin.loader,
+               { loader: 'css-loader?url=false'},
+               { loader: 'sass-loader', options: { sourceMap: true } }
+            ],
          },
          {
             test: /\.(ttf|woff|woff2|eot|otf)$/,
@@ -98,14 +115,41 @@ module.exports = {
             ],
          },
          {
-            test: /\.(png|jpe?g|gif|svg|base64)$/,
+            test: /\.(gif|png|jpe?g|svg)$/i,
             use: [
                {
-                  loader: 'file-loader',
+                  loader: 'image-webpack-loader',
                   options: {
-                     name: '[folder]/[name].[ext]',
-                  },
+                     mozjpeg: {
+                        progressive: true,
+                        quality: 65
+                     },
+
+                     optipng: {
+                        enabled: false,
+                     },
+                     pngquant: {
+                        quality: [0.65, 0.90],
+                        speed: 4
+                     },
+                     gifsicle: {
+                        interlaced: false,
+                     },
+
+                     webp: {
+                        quality: 75
+                     },
+                  }
                },
+               {
+                  loader: 'file-loader',
+                  options:{
+                     name: '[name].[ext]',
+                     outputPath: 'images/',
+                     publicPath: 'images/'
+                  }
+               },
+               'url-loader?limit=100000'
             ],
          },
          {
@@ -119,7 +163,7 @@ module.exports = {
                },
             ],
          },
-         {test: /node_modules\/flickity/, loader: 'imports?define=>undefined'},
+
       ],
    },
 };
